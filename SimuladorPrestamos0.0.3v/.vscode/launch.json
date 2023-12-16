@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "d:/UNIVERSIDAD/PREGRADO S-II NOV23-MAR24/ESTRUCTURA DE DATOS/PROYECTOGITHUB/PROYECTO_PRIMER_PARCIAL",
-      "program": "d:/UNIVERSIDAD/PREGRADO S-II NOV23-MAR24/ESTRUCTURA DE DATOS/PROYECTOGITHUB/PROYECTO_PRIMER_PARCIAL/build/Debug/outDebug",
+      "cwd": "d:/UNIVERSIDAD/PREGRADO S-II NOV23-MAR24/ESTRUCTURA DE DATOS/Proyecto",
+      "program": "d:/UNIVERSIDAD/PREGRADO S-II NOV23-MAR24/ESTRUCTURA DE DATOS/Proyecto/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
