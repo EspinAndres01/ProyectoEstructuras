@@ -71,61 +71,41 @@ TablaAmortizacion::~TablaAmortizacion() {
     ultimo = nullptr;
 }
 
-unsigned int TablaAmortizacion::contadorArchivos = 0;
+void TablaAmortizacion::guardarDatosEnArchivo(double prestamo, double tasaInteresAnual, int numeroCuotas) {
+    std::ofstream archivo("datos_prestamo.txt", std::ios::app); // Abre el archivo en modo de añadir (append)
 
-std::string TablaAmortizacion::obtenerNombreArchivoFechaHora() {
-    std::time_t tiempoActual = std::time(nullptr);
-    std::tm* tiempo = std::localtime(&tiempoActual);
-
-    std::stringstream nombreArchivo;
-    nombreArchivo << "Amortizacion-" << (tiempo->tm_year + 1900) << "-"
-                 << std::setw(2) << std::setfill('0') << (tiempo->tm_mon + 1) << "-"
-                 << std::setw(2) << std::setfill('0') << tiempo->tm_mday << "-"
-                 << std::setw(2) << std::setfill('0') << tiempo->tm_hour << ":"
-                 << std::setw(2) << std::setfill('0') << tiempo->tm_min << ":"
-                 << std::setw(2) << std::setfill('0') << tiempo->tm_sec
-                 << "-" << std::setw(3) << std::setfill('0') << ++contadorArchivos; // Incrementar el contador para hacer el nombre único
-
-    return nombreArchivo.str();
-}
-
-void TablaAmortizacion::guardarTablaCSV(const std::string& nombreDirectorio) {
-    std::string nombreArchivo = obtenerNombreArchivoFechaHora() + ".csv";
-    std::string rutaCompleta = nombreDirectorio + "/" + nombreArchivo;
-
-    // Verificar si el directorio ya existe
-    std::ifstream dir(nombreDirectorio);
-    if (!dir.good()) {
-        // Intentar crear el directorio si no existe
-        if (std::system(("mkdir" + nombreDirectorio).c_str()) != 0) {
-            std::cerr << "Error al crear el directorio" << std::endl;
-            return;
-        }
+    if (!archivo) {
+        // Si el archivo no existe, se crea uno nuevo
+        archivo.open("datos_prestamo.txt");
     }
 
-    // Declarar el objeto std::ofstream fuera de la estructura condicional
-    std::ofstream archivo;
-    archivo.open(rutaCompleta); // Abrir el archivo
+    if (archivo.is_open()) {
+        archivo << prestamo << " " << tasaInteresAnual << " " << numeroCuotas <<std::endl;
+        archivo.close();
+        std::cout << "Los valores se han guardado exitosamente en 'datos_prestamo.txt'." << std::endl;
+    } else {
+        std::cerr << "No se pudo abrir el archivo 'datos_prestamo.txt' para escritura." << std::endl;
+    }
+}
+
+void TablaAmortizacion::cargarDatosDesdeArchivo(const std::string& nombreArchivo) {
+    std::ifstream archivo(nombreArchivo);
 
     if (archivo.is_open()) {
-        archivo << "Mes,Cuota,Amortizado,Intereses,Capital Pendiente,Fecha de Pago\n";
+        double prestamo;
+        double tasaInteresAnual;
+        int numeroCuotas;
 
-        NodoAmortizacion* actual = primero;
+        archivo >> prestamo >> tasaInteresAnual >> numeroCuotas;
 
-        while (actual != nullptr) {
-            archivo << actual->numeroMes << ","
-                    << actual->cuota << ","
-                    << actual->amortizado << ","
-                    << actual->intereses << ","
-                    << actual->capitalPendiente << ","
-                    << actual->fechaPago << "\n";
+        std::string fechaInicial = "-"; // Puedes establecer una fecha inicial predeterminada si es necesario
 
-            actual = actual->siguiente;
-        }
+        // Generar la tabla de amortización con los valores leídos del archivo
+        generarTabla(prestamo, tasaInteresAnual, numeroCuotas, fechaInicial);
 
         archivo.close();
-        std::cout << "La tabla se ha guardado exitosamente en " << rutaCompleta << std::endl;
+
     } else {
-        std::cerr << "No se pudo abrir el archivo " << rutaCompleta << " para escritura." << std::endl;
+        std::cerr << "El archivo " << nombreArchivo << " no existe o no se pudo abrir." << std::endl;
     }
 }

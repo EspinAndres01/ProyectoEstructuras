@@ -13,4 +13,8 @@ public:
     ~TablaAmortizacion();
     void guardarTablaCSV(const std::string& nombreDirectorio);
     std::string obtenerNombreArchivoFechaHora();
+    void guardarDatosEnArchivo(double prestamo, double tasaInteresAnual, int numeroCuotas);
+    void cargarDatosDesdeArchivo(const std::string& nombreArchivo);
 };
+
+

@@ -15,7 +15,11 @@ Fecha::Fecha(int d, int m, int a) : dia(d), mes(m), anio(a) {
     agregarDiaFestivo(11, 3); // Independencia de Cuenca
     agregarDiaFestivo(12, 25); // Navidad
     agregarDiaFestivo(12, 31); // Año Viejo
-}
+    agregarDiaFestivo(2, 12); // Carnaval dia 1
+    agregarDiaFestivo(2, 13); // Carnaval dia 2
+    agregarDiaFestivo(3, 29); // Viernes Santo 
+    agregarDiaFestivo(5, 3); // Dia del trabajo 
+}   
 int Fecha::diaAleatorio = 0;
 int Fecha::getAleatorio(){
     return diaAleatorio;
@@ -69,48 +73,6 @@ bool Fecha::esDiaHabil(const std::tm& fecha) {
 
     return true;
 }
-/*
-std::string Fecha::generarFechaPago(const std::string& fechaInicial, int mes) {
-    std::tm tm = {};
-    std::istringstream ss(fechaInicial);
-    ss >> std::get_time(&tm, "%Y-%m-%d");
-
-    // Crear un objeto Fecha para acceder a la función díasEnMes
-    Fecha objetoFecha(tm.tm_mday, tm.tm_mon + 1, tm.tm_year + 1900);
-
-    // Obtener la fecha actual
-    std::time_t t = std::time(nullptr);
-    std::tm tmActual = *std::localtime(&t);
-    tmActual.tm_hour = 0;
-    tmActual.tm_min = 0;
-    tmActual.tm_sec = 0;
-    tmActual.tm_mday = objetoFecha.diasEnMes(tmActual.tm_mon + 1, tmActual.tm_year + 1900);
-    std::time_t tActual = std::mktime(&tmActual);
-
-    auto tp = std::chrono::system_clock::from_time_t(tActual);
-
-    // Asumiendo que un mes tiene 30 días
-    for (int i = 0; i < mes; ++i) {
-        tp += std::chrono::hours(24); // Avanzar un día
-        std::time_t newTime = std::chrono::system_clock::to_time_t(tp);
-        std::tm newTm = *std::localtime(&newTime);
-        while (!objetoFecha.esDiaHabil(newTm)) {
-            tp += std::chrono::hours(24); // Si es fin de semana o día festivo, avanzar al siguiente día hábil
-            newTime = std::chrono::system_clock::to_time_t(tp);
-            newTm = *std::localtime(&newTime);
-        }
-    }
-
-    // Agregar un mes de gracia antes del primer pago
-    tp += std::chrono::hours(24 * 30);
-
-    std::time_t newTime = std::chrono::system_clock::to_time_t(tp);
-    std::tm newTm = *std::localtime(&newTime);
-    std::ostringstream newDate;
-    newDate << std::put_time(&newTm, "%Y-%m-%d");
-    return newDate.str();
-}
-*/
 
 int Fecha::obtenerDiaAleatorio() {
     // Generar un número aleatorio entre 1 y 31 (días en un mes) una vez
@@ -133,31 +95,48 @@ std::string Fecha::generarFechaPago(const std::string& fechaInicial, int mes) {
     int diaPago = objetoFecha.obtenerDiaAleatorio();
     std::cout << diaPago << " "; // Solo para verificar que se obtiene el mismo día aleatorio
 
-    // Asumir que un mes tiene 30 días y avanzar los meses
-    auto tp = std::chrono::system_clock::now(); // Declarar la variable tp aquí
-    for (int i = 0; i < mes; ++i) {
-        // Establecer la fecha de pago para el mes actual con el día aleatorio
-        std::time_t t = std::chrono::system_clock::to_time_t(tp);
-        std::tm tmPago = *std::localtime(&t);
-        tmPago.tm_hour = 0;
-        tmPago.tm_min = 0;
-        tmPago.tm_sec = 0;
-        tmPago.tm_mday = diaPago;
-        std::time_t tPago = std::mktime(&tmPago);
+    // Obtener la fecha actual
+    auto tpActual = std::chrono::system_clock::now();
+    std::time_t tActual = std::chrono::system_clock::to_time_t(tpActual);
+    std::tm tmActual = *std::localtime(&tActual);
+    std::time_t tPago = tActual;
 
-        // Crear un time_point a partir de la fecha de pago
-        tp = std::chrono::system_clock::from_time_t(tPago);
-
-        // Si el día de pago cae en fin de semana o es festivo, avanzar al siguiente día hábil
-        while (!objetoFecha.esDiaHabil(*std::localtime(&tPago))) {
+    // Verificar si la fecha actual es un día laboral y mantenerla si lo es
+    if (objetoFecha.esDiaHabil(tmActual)) {
+        // Si la fecha actual es laboral, establecerla como fecha de pago
+        tPago = tActual;
+    } else {
+        // Si no es un día laboral, encontrar el próximo día hábil
+        do {
             tPago += 24 * 60 * 60; // Avanzar un día
+            tmActual = *std::localtime(&tPago);
+        } while (!objetoFecha.esDiaHabil(tmActual));
+    }
+
+    // Crear un time_point a partir de la fecha de pago
+    auto tp = std::chrono::system_clock::from_time_t(tPago);
+
+    // Avanzar los meses
+    for (int i = 0; i < mes; ++i) {
+        // Avanzar al siguiente mes
+        tmActual.tm_mon++; // Avanzar al siguiente mes
+        if (tmActual.tm_mon >= 12) {
+            tmActual.tm_mon = 0;
+            tmActual.tm_year++; // Avanzar al siguiente año si es necesario
+        }
+
+        // Establecer la fecha de pago para el mes actual con el día aleatorio
+        tmActual.tm_mday = diaPago;
+        tPago = std::mktime(&tmActual);
+
+        // Si el día de pago cae en fin de semana, es festivo o supera los días del mes, avanzar al siguiente día hábil
+        while (!objetoFecha.esDiaHabil(*std::localtime(&tPago)) || objetoFecha.esDiaFestivo(tmActual.tm_mon + 1, tmActual.tm_mday) || tmActual.tm_mday > objetoFecha.diasEnMes(tmActual.tm_mon + 1, tmActual.tm_year + 1900)) {
+            tPago += 24 * 60 * 60; // Avanzar un día
+            tmActual = *std::localtime(&tPago);
         }
 
         // Convertir time_t actualizado a time_point
         tp = std::chrono::system_clock::from_time_t(tPago);
-
-        // Avanzar un mes
-        tp += std::chrono::hours(24 * objetoFecha.diasEnMes((tp.time_since_epoch().count() + i) % 12 + 1, 0));
     }
 
     // Obtener la fecha final
