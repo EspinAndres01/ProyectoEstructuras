@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_nodo_8cpp" kind="file" language="C++">
+    <compoundname>Nodo.cpp</compoundname>
+    <includes refid="_nodo_8h" local="yes">Nodo.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Nodo.cpp</label>
+        <link refid="_nodo_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Nodo.h</label>
+        <link refid="_nodo_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_nodo_8h" kindref="compound">Nodo.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_1acdd363e02aa434714ea8617b9dc4d44b" kindref="member">Nodo::Nodo</ref>(T<sp/>valor)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_1acf46078c62f4f551694f02897600a611" kindref="member">Nodo::setDato</ref>(T<sp/>valor)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_1ae3ab15a287f33983923c8f0594e7a1a7" kindref="member">Nodo::setSiguiente</ref>(<ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/>siguienteNodo)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_1a73f85bd0a63f8fc4c73af4abe61a1577" kindref="member">Nodo::setAnterior</ref>(<ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/>anteriorNodo)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">T<sp/><ref refid="class_nodo_1acdef37bb656169b5bfe9808f176c8308" kindref="member">Nodo::getDato</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/><ref refid="class_nodo_1a9be453ba1773864e0f49eaac024e0e0a" kindref="member">Nodo::getSiguiente</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/><ref refid="class_nodo_1afff41840aa78a6cbb1db3c79f8406e0a" kindref="member">Nodo::getAnterior</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>null;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Nodo.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_nodo_lista" kind="class" language="C++" prot="public">
+    <compoundname>NodoLista</compoundname>
+    <includes refid="_nodo_lista_8h" local="no">NodoLista.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_nodo_lista_1a20434fa8c39dc884c2266be292f90c43" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T NodoLista::dato</definition>
+        <argsstring></argsstring>
+        <name>dato</name>
+        <qualifiedname>NodoLista::dato</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoLista.h" line="26" column="7" bodyfile="NodoLista.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_lista_1a0cfe2e2258f68015e104141fd6ee824b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+        <definition>Nodo&lt;T&gt;* NodoLista::siguiente</definition>
+        <argsstring></argsstring>
+        <name>siguiente</name>
+        <qualifiedname>NodoLista::siguiente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoLista.h" line="27" column="10" bodyfile="NodoLista.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_nodo_lista_1a0198468be60e8e4c421a55b6cbfd301d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NodoLista::Nodo</definition>
+        <argsstring>(T dato)</argsstring>
+        <name>Nodo</name>
+        <qualifiedname>NodoLista::Nodo</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Project Untitled <ref refid="class_nodo_lista" kindref="compound">NodoLista</ref> implementation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dato</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoLista.h" line="15" column="6" bodyfile="NodoLista.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_lista_1a243a89c44c62f02da2a519df5af12698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T NodoLista::getDato</definition>
+        <argsstring>()</argsstring>
+        <name>getDato</name>
+        <qualifiedname>NodoLista::getDato</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>T </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoLista.h" line="17" column="3" bodyfile="NodoLista.cpp" bodystart="23" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_lista_1a164b7892edbe562c13317e1b9305fbeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+        <definition>Nodo&lt; T &gt; * NodoLista::getSiguiente</definition>
+        <argsstring>()</argsstring>
+        <name>getSiguiente</name>
+        <qualifiedname>NodoLista::getSiguiente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoLista.h" line="19" column="6" bodyfile="NodoLista.cpp" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_lista_1a71240b16ab16bb3dd75e614633e79cef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NodoLista::setSiguiente</definition>
+        <argsstring>(Nodo&lt; T &gt; *siguiente)</argsstring>
+        <name>setSiguiente</name>
+        <qualifiedname>NodoLista::setSiguiente</qualifiedname>
+        <param>
+          <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+          <declname>siguiente</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>siguiente</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoLista.h" line="24" column="6" bodyfile="NodoLista.cpp" bodystart="37" bodyend="39"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Project Untitled </para>
+    </detaileddescription>
+    <location file="NodoLista.h" line="9" column="1" bodyfile="NodoLista.h" bodystart="9" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_nodo_lista_1a20434fa8c39dc884c2266be292f90c43" prot="private" virt="non-virtual"><scope>NodoLista</scope><name>dato</name></member>
+      <member refid="class_nodo_lista_1a243a89c44c62f02da2a519df5af12698" prot="public" virt="non-virtual"><scope>NodoLista</scope><name>getDato</name></member>
+      <member refid="class_nodo_lista_1a164b7892edbe562c13317e1b9305fbeb" prot="public" virt="non-virtual"><scope>NodoLista</scope><name>getSiguiente</name></member>
+      <member refid="class_nodo_lista_1a0198468be60e8e4c421a55b6cbfd301d" prot="public" virt="non-virtual"><scope>NodoLista</scope><name>Nodo</name></member>
+      <member refid="class_nodo_lista_1a71240b16ab16bb3dd75e614633e79cef" prot="public" virt="non-virtual"><scope>NodoLista</scope><name>setSiguiente</name></member>
+      <member refid="class_nodo_lista_1a0cfe2e2258f68015e104141fd6ee824b" prot="private" virt="non-virtual"><scope>NodoLista</scope><name>siguiente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

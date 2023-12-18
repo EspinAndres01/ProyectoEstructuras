@@ -1,0 +1,94 @@
+.TH "NodoAmortizacion" 3 "Version 0.0.7" "ProyectoCredito" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+NodoAmortizacion
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <NodoAmortizacion\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBNodoAmortizacion\fP (mes:int, cuota:double, amortizado:double, intereses:double, capital:double, fecha:std::string)()()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "int \fBnumeroMes\fP"
+.br
+.ti -1c
+.RI "double \fBcuota\fP"
+.br
+.ti -1c
+.RI "double \fBamortizado\fP"
+.br
+.ti -1c
+.RI "double \fBintereses\fP"
+.br
+.ti -1c
+.RI "double \fBcapitalPendiente\fP"
+.br
+.ti -1c
+.RI "void \fBfechaPago\fP: std::string"
+.br
+.ti -1c
+.RI "\fBNodoAmortizacion\fP * \fBsiguiente\fP"
+.br
+.ti -1c
+.RI "\fBNodoAmortizacion\fP * \fBanterior\fP"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Project Untitled 
+.PP
+Definition at line \fB9\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "void NodoAmortizacion::NodoAmortizacion (mes:int, cuota:double, amortizado:double, intereses:double, capital:double, fecha:std::string)"
+Project Untitled \fBNodoAmortizacion\fP implementation 
+.PP
+Definition at line \fB13\fP of file \fBNodoAmortizacion\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "double NodoAmortizacion::amortizado"
+
+.PP
+Definition at line \fB13\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SS "\fBNodoAmortizacion\fP* NodoAmortizacion::anterior"
+
+.PP
+Definition at line \fB18\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SS "double NodoAmortizacion::capitalPendiente"
+
+.PP
+Definition at line \fB15\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SS "double NodoAmortizacion::cuota"
+
+.PP
+Definition at line \fB12\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SS "void NodoAmortizacion::fechaPago"
+
+.PP
+Definition at line \fB16\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SS "double NodoAmortizacion::intereses"
+
+.PP
+Definition at line \fB14\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SS "int NodoAmortizacion::numeroMes"
+
+.PP
+Definition at line \fB11\fP of file \fBNodoAmortizacion\&.h\fP\&.
+.SS "\fBNodoAmortizacion\fP* NodoAmortizacion::siguiente"
+
+.PP
+Definition at line \fB17\fP of file \fBNodoAmortizacion\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ProyectoCredito from the source code\&.

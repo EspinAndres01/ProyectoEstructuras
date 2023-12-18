@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_nodo_8h" kind="file" language="C++">
+    <compoundname>Nodo.h</compoundname>
+    <includedby refid="_nodo_8cpp" local="yes">Nodo.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>Nodo.cpp</label>
+        <link refid="_nodo_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Nodo.h</label>
+        <link refid="_nodo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_nodo" prot="public">Nodo</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_NODO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NODO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_nodo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_nodo" kindref="compound">Nodo</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo" kindref="compound">Nodo</ref>(T<sp/>valor);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_1acf46078c62f4f551694f02897600a611" kindref="member">setDato</ref>(T<sp/>valor);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_1ae3ab15a287f33983923c8f0594e7a1a7" kindref="member">setSiguiente</ref>(<ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/>siguienteNodo);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_1a73f85bd0a63f8fc4c73af4abe61a1577" kindref="member">setAnterior</ref>(<ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/>anteriorNodo);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">T<sp/><ref refid="class_nodo_1acdef37bb656169b5bfe9808f176c8308" kindref="member">getDato</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/><ref refid="class_nodo_1a9be453ba1773864e0f49eaac024e0e0a" kindref="member">getSiguiente</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/><ref refid="class_nodo_1afff41840aa78a6cbb1db3c79f8406e0a" kindref="member">getAnterior</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dato:<sp/>T;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/>siguiente;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/>anterior;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//_NODO_H</highlight></codeline>
+    </programlisting>
+    <location file="Nodo.h"/>
+  </compounddef>
+</doxygen>

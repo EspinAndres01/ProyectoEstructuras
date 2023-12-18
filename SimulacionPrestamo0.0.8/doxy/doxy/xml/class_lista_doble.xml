@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_lista_doble" kind="class" language="C++" prot="public">
+    <compoundname>ListaDoble</compoundname>
+    <includes refid="_lista_doble_8h" local="no">ListaDoble.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_lista_doble_1a9531b765943e67de60d6aa594e89b821" prot="public" static="no" mutable="no">
+        <type>void</type>
+        <definition>void ListaDoble::Attribute1</definition>
+        <argsstring></argsstring>
+        <name>Attribute1</name>
+        <qualifiedname>ListaDoble::Attribute1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hola </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="14" column="6" bodyfile="ListaDoble.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_lista_doble_1a3cd1115c50139c5e689ca54415e0bc6e" prot="public" static="no" mutable="no">
+        <type>void</type>
+        <definition>void ListaDoble::Attribute2</definition>
+        <argsstring></argsstring>
+        <name>Attribute2</name>
+        <qualifiedname>ListaDoble::Attribute2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>hola </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="18" column="6" bodyfile="ListaDoble.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_lista_doble_1a93f7004de0387d021ad830817790fd46" prot="private" static="no" mutable="no">
+        <type>void</type>
+        <definition>void ListaDoble::primero</definition>
+        <argsstring></argsstring>
+        <name>primero</name>
+        <qualifiedname>ListaDoble::primero</qualifiedname>
+        <bitfield> Nodo&lt;T&gt;*</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="39" column="10" bodyfile="ListaDoble.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_lista_doble_1ad1ec175779e63865a212b0459d8d4826" prot="private" static="no" mutable="no">
+        <type>void</type>
+        <definition>void ListaDoble::ultimo</definition>
+        <argsstring></argsstring>
+        <name>ultimo</name>
+        <qualifiedname>ListaDoble::ultimo</qualifiedname>
+        <bitfield> Nodo&lt;T&gt;*</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="40" column="10" bodyfile="ListaDoble.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_lista_doble_1ac9a17849733bd09928c988258a56842a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDoble::ListaDoble</definition>
+        <argsstring>()</argsstring>
+        <name>ListaDoble</name>
+        <qualifiedname>ListaDoble::ListaDoble</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Project Untitled <ref refid="class_lista_doble" kindref="compound">ListaDoble</ref> implementation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="20" column="6" bodyfile="ListaDoble.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_lista_doble_1a3a42bf42fecbffd1079e501fdebd5f79" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDoble::Insertar</definition>
+        <argsstring>(T valor)</argsstring>
+        <name>Insertar</name>
+        <qualifiedname>ListaDoble::Insertar</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="25" column="6" bodyfile="ListaDoble.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_lista_doble_1a56a5839e01762eef2ee2d6bd6515f70e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDoble::Buscar</definition>
+        <argsstring>(T valor)</argsstring>
+        <name>Buscar</name>
+        <qualifiedname>ListaDoble::Buscar</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="30" column="6" bodyfile="ListaDoble.cpp" bodystart="27" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_lista_doble_1a4e9edda3ae747c59c99a026502ecd82b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDoble::Eliminar</definition>
+        <argsstring>(T valor)</argsstring>
+        <name>Eliminar</name>
+        <qualifiedname>ListaDoble::Eliminar</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="35" column="6" bodyfile="ListaDoble.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_lista_doble_1a386e862be6c6681830c8791ebcaeb264" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ListaDoble::Mostrar</definition>
+        <argsstring>()</argsstring>
+        <name>Mostrar</name>
+        <qualifiedname>ListaDoble::Mostrar</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ListaDoble.h" line="37" column="6" bodyfile="ListaDoble.cpp" bodystart="38" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Project Untitled </para>
+    </detaileddescription>
+    <location file="ListaDoble.h" line="9" column="1" bodyfile="ListaDoble.h" bodystart="9" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_lista_doble_1a9531b765943e67de60d6aa594e89b821" prot="public" virt="non-virtual"><scope>ListaDoble</scope><name>Attribute1</name></member>
+      <member refid="class_lista_doble_1a3cd1115c50139c5e689ca54415e0bc6e" prot="public" virt="non-virtual"><scope>ListaDoble</scope><name>Attribute2</name></member>
+      <member refid="class_lista_doble_1a56a5839e01762eef2ee2d6bd6515f70e" prot="public" virt="non-virtual"><scope>ListaDoble</scope><name>Buscar</name></member>
+      <member refid="class_lista_doble_1a4e9edda3ae747c59c99a026502ecd82b" prot="public" virt="non-virtual"><scope>ListaDoble</scope><name>Eliminar</name></member>
+      <member refid="class_lista_doble_1a3a42bf42fecbffd1079e501fdebd5f79" prot="public" virt="non-virtual"><scope>ListaDoble</scope><name>Insertar</name></member>
+      <member refid="class_lista_doble_1ac9a17849733bd09928c988258a56842a" prot="public" virt="non-virtual"><scope>ListaDoble</scope><name>ListaDoble</name></member>
+      <member refid="class_lista_doble_1a386e862be6c6681830c8791ebcaeb264" prot="public" virt="non-virtual"><scope>ListaDoble</scope><name>Mostrar</name></member>
+      <member refid="class_lista_doble_1a93f7004de0387d021ad830817790fd46" prot="private" virt="non-virtual"><scope>ListaDoble</scope><name>primero</name></member>
+      <member refid="class_lista_doble_1ad1ec175779e63865a212b0459d8d4826" prot="private" virt="non-virtual"><scope>ListaDoble</scope><name>ultimo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

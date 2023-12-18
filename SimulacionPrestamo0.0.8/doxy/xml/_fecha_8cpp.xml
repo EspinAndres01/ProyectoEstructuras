@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_fecha_8cpp" kind="file" language="C++">
+    <compoundname>Fecha.cpp</compoundname>
+    <includes refid="_fecha_8h" local="yes">Fecha.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Fecha.cpp</label>
+        <link refid="_fecha_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Fecha.h</label>
+        <link refid="_fecha_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_fecha_8h" kindref="compound">Fecha.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_fecha_1ac4157fc747f60e0f1d3c1ddb2182fd09" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" kindref="member">Fecha::Fecha</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" kindref="member">Fecha::Fecha</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_fecha_1a4d1047477f6e006f6448d6ef3259e00c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a4d1047477f6e006f6448d6ef3259e00c" kindref="member">Fecha::validarFecha</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(anio<sp/>&lt;<sp/>0<sp/>||<sp/>mes<sp/>&lt;<sp/>1<sp/>||<sp/>mes<sp/>&gt;<sp/>12<sp/>||<sp/>dia<sp/>&lt;<sp/>1<sp/>||<sp/>dia<sp/>&gt;<sp/><ref refid="class_fecha_1abd58c618b82d76af620b0ebd016a37ac" kindref="member">diasEnMes</ref>(mes,<sp/>anio))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Fecha::diaAleatorio<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_fecha_1a87227009ee7b889680f167ab5f244940" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a87227009ee7b889680f167ab5f244940" kindref="member">Fecha::Operation4</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Fecha::esDiaHabil(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::tm&amp;<sp/><ref refid="main_8cpp_1abf33251cdcdad70728da0fbd73181e9a" kindref="member">fecha</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mes<sp/>=<sp/><ref refid="main_8cpp_1abf33251cdcdad70728da0fbd73181e9a" kindref="member">fecha</ref>.tm_mon<sp/>+<sp/>1;<sp/></highlight><highlight class="comment">//<sp/>tm_mon<sp/>va<sp/>de<sp/>0<sp/>a<sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dia<sp/>=<sp/><ref refid="main_8cpp_1abf33251cdcdad70728da0fbd73181e9a" kindref="member">fecha</ref>.tm_mday;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>si<sp/>es<sp/>fin<sp/>de<sp/>semana<sp/>(sábado<sp/>o<sp/>domingo)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="main_8cpp_1abf33251cdcdad70728da0fbd73181e9a" kindref="member">fecha</ref>.tm_wday<sp/>==<sp/>0<sp/>||<sp/><ref refid="main_8cpp_1abf33251cdcdad70728da0fbd73181e9a" kindref="member">fecha</ref>.tm_wday<sp/>==<sp/>6)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verifica<sp/>si<sp/>es<sp/>un<sp/>día festivo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" kindref="member">esDiaFestivo</ref>(mes,<sp/>dia))<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a4cf9774d291305be96b3e2a6fa3b3623" kindref="member">Fecha::esAnioBisiesto</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(year<sp/>%<sp/>4<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>year<sp/>%<sp/>100<sp/>!=<sp/>0)<sp/>||<sp/>(year<sp/>%<sp/>400<sp/>==<sp/>0);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_fecha_1abd58c618b82d76af620b0ebd016a37ac" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1abd58c618b82d76af620b0ebd016a37ac" kindref="member">Fecha::diasEnMes</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anio)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mes<sp/>==<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a4cf9774d291305be96b3e2a6fa3b3623" kindref="member">esAnioBisiesto</ref>(anio)<sp/>?<sp/>29<sp/>:<sp/>28;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mes<sp/>==<sp/>4<sp/>||<sp/>mes<sp/>==<sp/>6<sp/>||<sp/>mes<sp/>==<sp/>9<sp/>||<sp/>mes<sp/>==<sp/>11)<sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>30;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>31;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" kindref="member">Fecha::esDiaFestivo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>festivo<sp/>:<sp/>diasFestivos)<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(festivo.first<sp/>==<sp/>m<sp/>&amp;&amp;<sp/>festivo.second<sp/>==<sp/>d)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_fecha_1a280223050cd9d753ec0daa2cc5f6d935" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a280223050cd9d753ec0daa2cc5f6d935" kindref="member">Fecha::agregarDiaFestivo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" kindref="member">esDiaFestivo</ref>(m,<sp/>d))</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diasFestivos.push_back(std::make_pair(m,<sp/>d));</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107" refid="class_fecha_1a2c544406c127317cd3968154af7f10d7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a2c544406c127317cd3968154af7f10d7" kindref="member">Fecha::obtenerDiaAleatorio</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Generar<sp/>un<sp/>número<sp/>aleatorio<sp/>entre<sp/>1<sp/>y<sp/>31<sp/>(días<sp/>en<sp/>un<sp/>mes)<sp/>una<sp/>vez</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(diaAleatorio<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand(time(</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">));<sp/></highlight><highlight class="comment">//<sp/>Inicializar<sp/>la<sp/>semilla<sp/>de<sp/>rand<sp/>con<sp/>el<sp/>tiempo<sp/>actual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diaAleatorio<sp/>=<sp/>rand()<sp/>%<sp/>31<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>diaAleatorio;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_fecha_1a40cc29f53529a61a45c67d0ee76939d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a40cc29f53529a61a45c67d0ee76939d4" kindref="member">Fecha::getAleatorio</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>diaAleatorio;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal">std::string<sp/>Fecha::generarFechaPago(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fechaInicial,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mes)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>std::tm<sp/>tm<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>std::istringstream<sp/>ss(fechaInicial);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>ss<sp/>&gt;&gt;<sp/>std::get_time(&amp;tm,<sp/></highlight><highlight class="stringliteral">&quot;%Y-%m-%d&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Crear<sp/>un<sp/>objeto<sp/>Fecha<sp/>para<sp/>acceder<sp/>a<sp/>la<sp/>función díasEnMes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fecha" kindref="compound">Fecha</ref><sp/>objetoFecha(tm.tm_mday,<sp/>tm.tm_mon<sp/>+<sp/>1,<sp/>tm.tm_year<sp/>+<sp/>1900);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Obtener<sp/>el<sp/>día de<sp/>pago<sp/>aleatorio<sp/>una<sp/>vez<sp/>y<sp/>almacenarlo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diaPago<sp/>=<sp/>objetoFecha.obtenerDiaAleatorio();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Obtener<sp/>la<sp/>fecha<sp/>actual</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>tpActual<sp/>=<sp/>std::chrono::system_clock::now();</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>std::time_t<sp/>tActual<sp/>=<sp/>std::chrono::system_clock::to_time_t(tpActual);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>std::tm<sp/>tmActual<sp/>=<sp/>*std::localtime(&amp;tActual);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>std::time_t<sp/>tPago<sp/>=<sp/>tActual;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Verificar<sp/>si<sp/>la<sp/>fecha<sp/>actual<sp/>es<sp/>un<sp/>día laboral<sp/>y<sp/>mantenerla<sp/>si<sp/>lo<sp/>es</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(objetoFecha.esDiaHabil(tmActual))<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Si<sp/>la<sp/>fecha<sp/>actual<sp/>es<sp/>laboral,<sp/>establecerla<sp/>como<sp/>fecha<sp/>de<sp/>pago</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tPago<sp/>=<sp/>tActual;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Si<sp/>no<sp/>es<sp/>un<sp/>día laboral,<sp/>encontrar<sp/>el<sp/>próximo<sp/>día hábil</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tPago<sp/>+=<sp/>24<sp/>*<sp/>60<sp/>*<sp/>60;<sp/></highlight><highlight class="comment">//<sp/>Avanzar<sp/>un<sp/>día</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmActual<sp/>=<sp/>*std::localtime(&amp;tPago);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!objetoFecha.esDiaHabil(tmActual));</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Crear<sp/>un<sp/>time_point<sp/>a<sp/>partir<sp/>de<sp/>la<sp/>fecha<sp/>de<sp/>pago</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>tp<sp/>=<sp/>std::chrono::system_clock::from_time_t(tPago);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Avanzar<sp/>los<sp/>meses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>mes;<sp/>++i)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Avanzar<sp/>al<sp/>siguiente<sp/>mes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmActual.tm_mon++;<sp/></highlight><highlight class="comment">//<sp/>Avanzar<sp/>al<sp/>siguiente<sp/>mes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(tmActual.tm_mon<sp/>&gt;=<sp/>12)<sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmActual.tm_mon<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmActual.tm_year++;<sp/></highlight><highlight class="comment">//<sp/>Avanzar<sp/>al<sp/>siguiente<sp/>año si<sp/>es<sp/>necesario</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Establecer<sp/>la<sp/>fecha<sp/>de<sp/>pago<sp/>para<sp/>el<sp/>mes<sp/>actual<sp/>con<sp/>el<sp/>día aleatorio</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmActual.tm_mday<sp/>=<sp/>diaPago;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tPago<sp/>=<sp/>std::mktime(&amp;tmActual);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Si<sp/>el<sp/>día de<sp/>pago<sp/>cae<sp/>en<sp/>fin<sp/>de<sp/>semana,<sp/>es<sp/>festivo<sp/>o<sp/>supera<sp/>los<sp/>días<sp/>del<sp/>mes,<sp/>avanzar<sp/>al<sp/>siguiente<sp/>día hábil</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!objetoFecha.esDiaHabil(*std::localtime(&amp;tPago))<sp/>||<sp/>objetoFecha.esDiaFestivo(tmActual.tm_mon<sp/>+<sp/>1,<sp/>tmActual.tm_mday)<sp/>||<sp/>tmActual.tm_mday<sp/>&gt;<sp/>objetoFecha.diasEnMes(tmActual.tm_mon<sp/>+<sp/>1,<sp/>tmActual.tm_year<sp/>+<sp/>1900))<sp/>{</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tPago<sp/>+=<sp/>24<sp/>*<sp/>60<sp/>*<sp/>60;<sp/></highlight><highlight class="comment">//<sp/>Avanzar<sp/>un<sp/>día</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tmActual<sp/>=<sp/>*std::localtime(&amp;tPago);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convertir<sp/>time_t<sp/>actualizado<sp/>a<sp/>time_point</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tp<sp/>=<sp/>std::chrono::system_clock::from_time_t(tPago);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Obtener<sp/>la<sp/>fecha<sp/>final</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>std::time_t<sp/>finalTime<sp/>=<sp/>std::chrono::system_clock::to_time_t(tp);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>std::tm*<sp/>finalTm<sp/>=<sp/>std::localtime(&amp;finalTime);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostringstream<sp/>finalDate;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>finalDate<sp/>&lt;&lt;<sp/>std::put_time(finalTm,<sp/></highlight><highlight class="stringliteral">&quot;%Y-%m-%d&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>finalDate.str();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Fecha.cpp"/>
+  </compounddef>
+</doxygen>

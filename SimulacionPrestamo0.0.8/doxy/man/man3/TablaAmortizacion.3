@@ -1,0 +1,114 @@
+.TH "TablaAmortizacion" 3 "Version 0.0.7" "ProyectoCredito" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TablaAmortizacion
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <TablaAmortizacion\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBTablaAmortizacion\fP ()"
+.br
+.ti -1c
+.RI "void \fBgenerarTabla\fP (prestamo:double, tasaInteresAnual:double, numeroCuotas:int, fechaInicial:const std::string &, diaAleatorio:int)()"
+.br
+.ti -1c
+.RI "void \fBmostrarTabla\fP ()"
+.br
+.ti -1c
+.RI "void \fBguardarTablaCSV\fP (nombreDirectorio:std::string)()"
+.br
+.ti -1c
+.RI "void obtenerNombreArchivoFechaHora() void \fBguardarDatosEnArchivo\fP (prestamo:double, tasaInteresAnual:double, numeroCuotas:int, diaAleatorio:int)()"
+.br
+.ti -1c
+.RI "void \fBcargarDatosDesdeArchivo\fP (nombreArchivo:const std::string &, op:int)()"
+.br
+.ti -1c
+.RI "void \fBguardarTablaCSV\fP (nombreDirectorio:std::string)()()"
+.br
+.ti -1c
+.RI "void \fBTablaAmortizacion\fP ()"
+.br
+.ti -1c
+.RI "void \fBcrearRespaldo\fP (nombreArchivo:std::string)()"
+.br
+.ti -1c
+.RI "void \fBlistarRespaldos\fP (nombreArchivo:std::string)()"
+.br
+.ti -1c
+.RI "void \fBrestaurarRespaldo\fP (nombreArchivo:std::string, respaldoSeleccionado:std::string)()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Project Untitled 
+.PP
+Definition at line \fB9\fP of file \fBTablaAmortizacion\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "void TablaAmortizacion::TablaAmortizacion ()"
+Project Untitled \fBTablaAmortizacion\fP implementation
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line \fB13\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::TablaAmortizacion ()"
+
+.SH "Member Function Documentation"
+.PP 
+.SS "void TablaAmortizacion::cargarDatosDesdeArchivo (nombreArchivo:const std::string &, op:int)"
+
+.PP
+Definition at line \fB40\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::crearRespaldo (nombreArchivo:std::string)"
+
+.PP
+Definition at line \fB55\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::generarTabla (prestamo:double, tasaInteresAnual:double, numeroCuotas:int, fechaInicial:const std::string &, diaAleatorio:int)"
+
+.PP
+Definition at line \fB17\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::guardarDatosEnArchivo (prestamo:double, tasaInteresAnual:double, numeroCuotas:int, diaAleatorio:int)"
+
+.PP
+Definition at line \fB36\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::guardarTablaCSV (nombreDirectorio:std::string)"
+
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line \fB28\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::guardarTablaCSV (nombreDirectorio:std::string)"
+
+.SS "void TablaAmortizacion::listarRespaldos (nombreArchivo:std::string)"
+
+.PP
+Definition at line \fB59\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::mostrarTabla ()"
+
+.PP
+Definition at line \fB21\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+.SS "void TablaAmortizacion::restaurarRespaldo (nombreArchivo:std::string, respaldoSeleccionado:std::string)"
+
+.PP
+Definition at line \fB63\fP of file \fBTablaAmortizacion\&.cpp\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ProyectoCredito from the source code\&.

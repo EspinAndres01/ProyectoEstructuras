@@ -1,0 +1,147 @@
+\doxysection{Fecha.\+cpp}
+\hypertarget{_fecha_8cpp_source}{}\label{_fecha_8cpp_source}\mbox{\hyperlink{_fecha_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_fecha_8h}{Fecha.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00018}\mbox{\hyperlink{class_fecha_ac4157fc747f60e0f1d3c1ddb2182fd09}{00018}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fecha_a7b55abb83291d5c960e9f8104a6eea6e}{Fecha::Fecha}}(\textcolor{keywordtype}{int}\ d,\ \textcolor{keywordtype}{int}\ m,\ \textcolor{keywordtype}{int}\ a)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00020}00020\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00022}\mbox{\hyperlink{class_fecha_a7b55abb83291d5c960e9f8104a6eea6e}{00022}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fecha_a7b55abb83291d5c960e9f8104a6eea6e}{Fecha::Fecha}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00024}00024\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00029}\mbox{\hyperlink{class_fecha_a4d1047477f6e006f6448d6ef3259e00c}{00029}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fecha_a4d1047477f6e006f6448d6ef3259e00c}{Fecha::validarFecha}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordflow}{if}\ (anio\ <\ 0\ ||\ mes\ <\ 1\ ||\ mes\ >\ 12\ ||\ dia\ <\ 1\ ||\ dia\ >\ \mbox{\hyperlink{class_fecha_abd58c618b82d76af620b0ebd016a37ac}{diasEnMes}}(mes,\ anio))}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00031}00031\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00034}00034\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00035}00035\ \textcolor{keywordtype}{int}\ Fecha::diaAleatorio\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00037}\mbox{\hyperlink{class_fecha_a87227009ee7b889680f167ab5f244940}{00037}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fecha_a87227009ee7b889680f167ab5f244940}{Fecha::Operation4}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00039}00039\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00041}00041\ \textcolor{keywordtype}{void}\ Fecha::esDiaHabil(\textcolor{keyword}{const}\ std::tm\&\ \mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{fecha}})\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{int}\ mes\ =\ \mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{fecha}}.tm\_mon\ +\ 1;\ \textcolor{comment}{//\ tm\_mon\ va\ de\ 0\ a\ 11}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordtype}{int}\ dia\ =\ \mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{fecha}}.tm\_mday;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00045}00045\ \ \ \ \ \textcolor{comment}{//\ Verifica\ si\ es\ fin\ de\ semana\ (sábado\ o\ domingo)}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{fecha}}.tm\_wday\ ==\ 0\ ||\ \mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{fecha}}.tm\_wday\ ==\ 6)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00048}00048\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{comment}{//\ Verifica\ si\ es\ un\ día festivo}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00051}00051\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_fecha_aedd364b0054b1d4d3244baea6365cc71}{esDiaFestivo}}(mes,\ dia))\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00053}00053\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00055}00055\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00056}00056\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00062}00062\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fecha_a4cf9774d291305be96b3e2a6fa3b3623}{Fecha::esAnioBisiesto}}(\textcolor{keywordtype}{int}\ year)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00063}00063\ \ \ \ \ \textcolor{keywordflow}{return}\ (year\ \%\ 4\ ==\ 0\ \&\&\ year\ \%\ 100\ !=\ 0)\ ||\ (year\ \%\ 400\ ==\ 0);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00064}00064\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00065}00065\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00071}\mbox{\hyperlink{class_fecha_abd58c618b82d76af620b0ebd016a37ac}{00071}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fecha_abd58c618b82d76af620b0ebd016a37ac}{Fecha::diasEnMes}}(\textcolor{keywordtype}{int}\ mes,\ \textcolor{keywordtype}{int}\ anio)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00072}00072\ \ \ \ \ \textcolor{keywordflow}{if}\ (mes\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_fecha_a4cf9774d291305be96b3e2a6fa3b3623}{esAnioBisiesto}}(anio)\ ?\ 29\ :\ 28;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00074}00074\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (mes\ ==\ 4\ ||\ mes\ ==\ 6\ ||\ mes\ ==\ 9\ ||\ mes\ ==\ 11)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 30;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00076}00076\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 31;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00078}00078\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00079}00079\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00080}00080\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00086}\mbox{\hyperlink{class_fecha_aedd364b0054b1d4d3244baea6365cc71}{00086}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fecha_aedd364b0054b1d4d3244baea6365cc71}{Fecha::esDiaFestivo}}(\textcolor{keywordtype}{int}\ m,\ \textcolor{keywordtype}{int}\ d)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ festivo\ :\ diasFestivos)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (festivo.first\ ==\ m\ \&\&\ festivo.second\ ==\ d)}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00090}00090\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00091}00091\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00092}00092\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00093}00093\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00099}\mbox{\hyperlink{class_fecha_a280223050cd9d753ec0daa2cc5f6d935}{00099}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fecha_a280223050cd9d753ec0daa2cc5f6d935}{Fecha::agregarDiaFestivo}}(\textcolor{keywordtype}{int}\ m,\ \textcolor{keywordtype}{int}\ d)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00100}00100\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_fecha_aedd364b0054b1d4d3244baea6365cc71}{esDiaFestivo}}(m,\ d))}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ diasFestivos.push\_back(std::make\_pair(m,\ d));}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00102}00102\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00103}00103\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00107}\mbox{\hyperlink{class_fecha_a2c544406c127317cd3968154af7f10d7}{00107}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fecha_a2c544406c127317cd3968154af7f10d7}{Fecha::obtenerDiaAleatorio}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00108}00108\ \ \ \ \textcolor{comment}{//\ Generar\ un\ número\ aleatorio\ entre\ 1\ y\ 31\ (días\ en\ un\ mes)\ una\ vez}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00109}00109\ \ \ \ \ \textcolor{keywordflow}{if}\ (diaAleatorio\ ==\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00110}00110\ \ \ \ \ \ \ \ \ srand(time(\textcolor{keyword}{nullptr}));\ \textcolor{comment}{//\ Inicializar\ la\ semilla\ de\ rand\ con\ el\ tiempo\ actual}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00111}00111\ \ \ \ \ \ \ \ \ diaAleatorio\ =\ rand()\ \%\ 31\ +\ 1;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00112}00112\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{keywordflow}{return}\ diaAleatorio;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00114}00114\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00115}00115\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00119}\mbox{\hyperlink{class_fecha_a40cc29f53529a61a45c67d0ee76939d4}{00119}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_fecha_a40cc29f53529a61a45c67d0ee76939d4}{Fecha::getAleatorio}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00120}00120\ \ \ \ \ \textcolor{keywordflow}{return}\ diaAleatorio;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00121}00121\ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00122}00122\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00123}00123\ std::string\ Fecha::generarFechaPago(\textcolor{keyword}{const}\ std::string\&\ fechaInicial,\ \textcolor{keywordtype}{int}\ mes)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00124}00124\ \ \ \ \ std::tm\ tm\ =\ \{\};}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00125}00125\ \ \ \ \ std::istringstream\ ss(fechaInicial);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00126}00126\ \ \ \ \ ss\ >>\ std::get\_time(\&tm,\ \textcolor{stringliteral}{"{}\%Y-\/\%m-\/\%d"{}});}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00128}00128\ \ \ \ \ \textcolor{comment}{//\ Crear\ un\ objeto\ Fecha\ para\ acceder\ a\ la\ función díasEnMes}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00129}00129\ \ \ \ \ \mbox{\hyperlink{class_fecha}{Fecha}}\ objetoFecha(tm.tm\_mday,\ tm.tm\_mon\ +\ 1,\ tm.tm\_year\ +\ 1900);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00131}00131\ \ \ \ \ \textcolor{comment}{//\ Obtener\ el\ día de\ pago\ aleatorio\ una\ vez\ y\ almacenarlo}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00132}00132\ \ \ \ \ \textcolor{keywordtype}{int}\ diaPago\ =\ objetoFecha.obtenerDiaAleatorio();}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00133}00133\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00134}00134\ \ \ \ \ \textcolor{comment}{//\ Obtener\ la\ fecha\ actual}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{keyword}{auto}\ tpActual\ =\ std::chrono::system\_clock::now();}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00136}00136\ \ \ \ \ std::time\_t\ tActual\ =\ std::chrono::system\_clock::to\_time\_t(tpActual);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00137}00137\ \ \ \ \ std::tm\ tmActual\ =\ *std::localtime(\&tActual);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00138}00138\ \ \ \ \ std::time\_t\ tPago\ =\ tActual;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00140}00140\ \ \ \ \ \textcolor{comment}{//\ Verificar\ si\ la\ fecha\ actual\ es\ un\ día laboral\ y\ mantenerla\ si\ lo\ es}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00141}00141\ \ \ \ \ \textcolor{keywordflow}{if}\ (objetoFecha.esDiaHabil(tmActual))\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00142}00142\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Si\ la\ fecha\ actual\ es\ laboral,\ establecerla\ como\ fecha\ de\ pago}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00143}00143\ \ \ \ \ \ \ \ \ tPago\ =\ tActual;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00144}00144\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00145}00145\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Si\ no\ es\ un\ día laboral,\ encontrar\ el\ próximo\ día hábil}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00146}00146\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ tPago\ +=\ 24\ *\ 60\ *\ 60;\ \textcolor{comment}{//\ Avanzar\ un\ día}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ tmActual\ =\ *std::localtime(\&tPago);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00149}00149\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (!objetoFecha.esDiaHabil(tmActual));}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00150}00150\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00152}00152\ \ \ \ \ \textcolor{comment}{//\ Crear\ un\ time\_point\ a\ partir\ de\ la\ fecha\ de\ pago}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00153}00153\ \ \ \ \ \textcolor{keyword}{auto}\ tp\ =\ std::chrono::system\_clock::from\_time\_t(tPago);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00155}00155\ \ \ \ \ \textcolor{comment}{//\ Avanzar\ los\ meses}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00156}00156\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ mes;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00157}00157\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Avanzar\ al\ siguiente\ mes}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00158}00158\ \ \ \ \ \ \ \ \ tmActual.tm\_mon++;\ \textcolor{comment}{//\ Avanzar\ al\ siguiente\ mes}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00159}00159\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (tmActual.tm\_mon\ >=\ 12)\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ tmActual.tm\_mon\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ tmActual.tm\_year++;\ \textcolor{comment}{//\ Avanzar\ al\ siguiente\ año si\ es\ necesario}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00162}00162\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00164}00164\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Establecer\ la\ fecha\ de\ pago\ para\ el\ mes\ actual\ con\ el\ día aleatorio}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00165}00165\ \ \ \ \ \ \ \ \ tmActual.tm\_mday\ =\ diaPago;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00166}00166\ \ \ \ \ \ \ \ \ tPago\ =\ std::mktime(\&tmActual);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Si\ el\ día de\ pago\ cae\ en\ fin\ de\ semana,\ es\ festivo\ o\ supera\ los\ días\ del\ mes,\ avanzar\ al\ siguiente\ día hábil}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00169}00169\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (!objetoFecha.esDiaHabil(*std::localtime(\&tPago))\ ||\ objetoFecha.esDiaFestivo(tmActual.tm\_mon\ +\ 1,\ tmActual.tm\_mday)\ ||\ tmActual.tm\_mday\ >\ objetoFecha.diasEnMes(tmActual.tm\_mon\ +\ 1,\ tmActual.tm\_year\ +\ 1900))\ \{}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00170}00170\ \ \ \ \ \ \ \ \ \ \ \ \ tPago\ +=\ 24\ *\ 60\ *\ 60;\ \textcolor{comment}{//\ Avanzar\ un\ día}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00171}00171\ \ \ \ \ \ \ \ \ \ \ \ \ tmActual\ =\ *std::localtime(\&tPago);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00172}00172\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00173}00173\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00174}00174\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Convertir\ time\_t\ actualizado\ a\ time\_point}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00175}00175\ \ \ \ \ \ \ \ \ tp\ =\ std::chrono::system\_clock::from\_time\_t(tPago);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00176}00176\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00177}00177\ }
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00178}00178\ \ \ \ \ \textcolor{comment}{//\ Obtener\ la\ fecha\ final}}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00179}00179\ \ \ \ \ std::time\_t\ finalTime\ =\ std::chrono::system\_clock::to\_time\_t(tp);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00180}00180\ \ \ \ \ std::tm*\ finalTm\ =\ std::localtime(\&finalTime);}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00181}00181\ \ \ \ \ std::ostringstream\ finalDate;}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00182}00182\ \ \ \ \ finalDate\ <<\ std::put\_time(finalTm,\ \textcolor{stringliteral}{"{}\%Y-\/\%m-\/\%d"{}});}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00183}00183\ \ \ \ \ \textcolor{keywordflow}{return}\ finalDate.str();}
+\DoxyCodeLine{\Hypertarget{_fecha_8cpp_source_l00184}00184\ \}}
+
+\end{DoxyCode}

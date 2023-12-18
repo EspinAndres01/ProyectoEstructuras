@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_lista_doble_8cpp" kind="file" language="C++">
+    <compoundname>ListaDoble.cpp</compoundname>
+    <includes refid="_lista_doble_8h" local="yes">ListaDoble.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>ListaDoble.cpp</label>
+        <link refid="_lista_doble_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ListaDoble.h</label>
+        <link refid="_lista_doble_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_lista_doble_8h" kindref="compound">ListaDoble.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1ac9a17849733bd09928c988258a56842a" kindref="member">ListaDoble::ListaDoble</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a3a42bf42fecbffd1079e501fdebd5f79" kindref="member">ListaDoble::Insertar</ref>(T<sp/>valor)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a56a5839e01762eef2ee2d6bd6515f70e" kindref="member">ListaDoble::Buscar</ref>(T<sp/>valor)<sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a4e9edda3ae747c59c99a026502ecd82b" kindref="member">ListaDoble::Eliminar</ref>(T<sp/>valor)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a386e862be6c6681830c8791ebcaeb264" kindref="member">ListaDoble::Mostrar</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ListaDoble.cpp"/>
+  </compounddef>
+</doxygen>

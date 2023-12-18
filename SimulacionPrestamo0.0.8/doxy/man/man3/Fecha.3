@@ -1,0 +1,214 @@
+.TH "Fecha" 3 "Version 0.0.7" "ProyectoCredito" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Fecha
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <Fecha\&.h>\fP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBFecha\fP (int d, int m, int a)"
+.br
+.ti -1c
+.RI "void \fBFecha\fP ()"
+.br
+.ti -1c
+.RI "bool \fBvalidarFecha\fP ()"
+.br
+.ti -1c
+.RI "void \fBOperation4\fP ()"
+.br
+.ti -1c
+.RI "int \fBdiasEnMes\fP (int mes, int anio)"
+.br
+.ti -1c
+.RI "bool \fBesDiaFestivo\fP (int m, int d)"
+.br
+.ti -1c
+.RI "void \fBagregarDiaFestivo\fP (int m, int d)"
+.br
+.ti -1c
+.RI "int \fBobtenerDiaAleatorio\fP ()"
+.br
+.ti -1c
+.RI "int \fBgetAleatorio\fP ()"
+.br
+.in -1c
+.SS "Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "void esDiaHabil(const std::tm &fecha) bool \fBesAnioBisiesto\fP (int anio)"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+Project Untitled 
+.PP
+Definition at line \fB9\fP of file \fBFecha\&.h\fP\&.
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "void Fecha::Fecha (int d, int m, int a)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fId\fP 
+.br
+\fIm\fP 
+.br
+\fIa\fP 
+.RE
+.PP
+Project Untitled \fBFecha\fP implementation 
+.PP
+\fBParameters\fP
+.RS 4
+\fId\fP 
+.br
+\fIm\fP 
+.br
+\fIa\fP 
+.RE
+.PP
+
+.PP
+Definition at line \fB18\fP of file \fBFecha\&.cpp\fP\&.
+.SS "void Fecha::Fecha ()"
+
+.PP
+Definition at line \fB22\fP of file \fBFecha\&.cpp\fP\&.
+.SH "Member Function Documentation"
+.PP 
+.SS "void Fecha::agregarDiaFestivo (int m, int d)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP 
+.br
+\fId\fP 
+.br
+\fIm\fP 
+.br
+\fId\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+void 
+.RE
+.PP
+
+.PP
+Definition at line \fB72\fP of file \fBFecha\&.cpp\fP\&.
+.SS "int Fecha::diasEnMes (int mes, int anio)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fImes\fP 
+.br
+\fIanio\fP 
+.br
+\fImes\fP 
+.br
+\fIanio\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Definition at line \fB54\fP of file \fBFecha\&.cpp\fP\&.
+.SS "bool Fecha::esDiaFestivo (int m, int d)"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIm\fP 
+.br
+\fId\fP 
+.br
+\fIm\fP 
+.br
+\fId\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Definition at line \fB63\fP of file \fBFecha\&.cpp\fP\&.
+.SS "int Fecha::getAleatorio ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Definition at line \fB86\fP of file \fBFecha\&.cpp\fP\&.
+.SS "int Fecha::obtenerDiaAleatorio ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.PP
+Definition at line \fB79\fP of file \fBFecha\&.cpp\fP\&.
+.SS "void Fecha::Operation4 ()"
+
+.PP
+Definition at line \fB33\fP of file \fBFecha\&.cpp\fP\&.
+.SS "bool Fecha::validarFecha ()"
+
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Definition at line \fB29\fP of file \fBFecha\&.cpp\fP\&.
+.SH "Member Data Documentation"
+.PP 
+.SS "bool Fecha::esAnioBisiesto"
+
+.PP
+\fBParameters\fP
+.RS 4
+\fIanio\fP 
+.br
+\fIanio\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+bool 
+.RE
+.PP
+
+.PP
+Definition at line \fB30\fP of file \fBFecha\&.h\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for ProyectoCredito from the source code\&.

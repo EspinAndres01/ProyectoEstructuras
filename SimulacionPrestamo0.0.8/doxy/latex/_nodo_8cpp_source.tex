@@ -1,0 +1,43 @@
+\doxysection{Nodo.\+cpp}
+\hypertarget{_nodo_8cpp_source}{}\label{_nodo_8cpp_source}\mbox{\hyperlink{_nodo_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_nodo_8h}{Nodo.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00016}\mbox{\hyperlink{class_nodo_aa2195ac9ea731caef54c7dc14d7c9638}{00016}}\ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nodo_aa2195ac9ea731caef54c7dc14d7c9638}{Nodo::Nodo}}(T\ valor)\ \{}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00017}00017\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00018}00018\ \}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00020}00020\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00021}00021\ \mbox{\hyperlink{class_nodo_aa2195ac9ea731caef54c7dc14d7c9638}{Nodo<T>::Nodo}}(T\ valor)\ :\ dato(valor),\ siguiente(nullptr),\ anterior(nullptr)\ \{\}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00025}00025\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00026}\mbox{\hyperlink{class_nodo_acf46078c62f4f551694f02897600a611}{00026}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nodo_acf46078c62f4f551694f02897600a611}{Nodo::setDato}}(T\ valor)\ \{}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00027}00027\ \ \ \ \ dato\ =\ valor;}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00028}00028\ \}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00033}00033\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00034}\mbox{\hyperlink{class_nodo_ae3ab15a287f33983923c8f0594e7a1a7}{00034}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nodo_ae3ab15a287f33983923c8f0594e7a1a7}{Nodo<T>::setSiguiente}}(\mbox{\hyperlink{class_nodo}{Nodo<T>}}*\ siguienteNodo)\ \{}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00035}00035\ \ \ \ \ siguiente\ =\ siguienteNodo;}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00036}00036\ \}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00042}00042\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00043}\mbox{\hyperlink{class_nodo_a73f85bd0a63f8fc4c73af4abe61a1577}{00043}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_nodo_a73f85bd0a63f8fc4c73af4abe61a1577}{Nodo<T>::setAnterior}}(\mbox{\hyperlink{class_nodo}{Nodo<T>}}*\ anteriorNodo)\ \{}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00044}00044\ \ \ \ \ anterior\ =\ anteriorNodo;}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00045}00045\ \}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00050}00050\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00051}\mbox{\hyperlink{class_nodo_acdef37bb656169b5bfe9808f176c8308}{00051}}\ T\ \mbox{\hyperlink{class_nodo_acdef37bb656169b5bfe9808f176c8308}{Nodo<T>::getDato}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00052}00052\ \ \ \ \ \textcolor{keywordflow}{return}\ dato;}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00053}00053\ \}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00058}00058\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00059}\mbox{\hyperlink{class_nodo_a9be453ba1773864e0f49eaac024e0e0a}{00059}}\ \mbox{\hyperlink{class_nodo}{Nodo<T>}}*\ \mbox{\hyperlink{class_nodo_a9be453ba1773864e0f49eaac024e0e0a}{Nodo<T>::getSiguiente}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordflow}{return}\ siguiente;}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00061}00061\ \}}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00062}00062\ }
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00066}00066\ \textcolor{keyword}{template}\ <\textcolor{keyword}{typename}\ T>}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00067}\mbox{\hyperlink{class_nodo_afff41840aa78a6cbb1db3c79f8406e0a}{00067}}\ \mbox{\hyperlink{class_nodo}{Nodo<T>}}*\ \mbox{\hyperlink{class_nodo_afff41840aa78a6cbb1db3c79f8406e0a}{Nodo<T>::getAnterior}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keywordflow}{return}\ anterior;}
+\DoxyCodeLine{\Hypertarget{_nodo_8cpp_source_l00069}00069\ \}}
+
+\end{DoxyCode}

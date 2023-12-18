@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_fecha" kind="class" language="C++" prot="public">
+    <compoundname>Fecha</compoundname>
+    <includes refid="_fecha_8h" local="no">Fecha.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_fecha_1a4cf9774d291305be96b3e2a6fa3b3623" prot="public" static="no" mutable="no">
+        <type>void esDiaHabil(const std::tm &amp;fecha) bool</type>
+        <definition>bool Fecha::esAnioBisiesto</definition>
+        <argsstring>(int anio)</argsstring>
+        <name>esAnioBisiesto</name>
+        <qualifiedname>Fecha::esAnioBisiesto</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anio</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="30" column="6" bodyfile="Fecha.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fecha_1ac53f8e215a42333a1a9ff1a87e8e70f7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Fecha::dia</definition>
+        <argsstring></argsstring>
+        <name>dia</name>
+        <qualifiedname>Fecha::dia</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="54" column="9" bodyfile="Fecha.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fecha_1a92bb43d32ce633e59bd11874c1a4b370" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Fecha::mes</definition>
+        <argsstring></argsstring>
+        <name>mes</name>
+        <qualifiedname>Fecha::mes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="55" column="9" bodyfile="Fecha.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fecha_1ad596dcd5c981e026d04a83a1c214e759" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Fecha::anio</definition>
+        <argsstring></argsstring>
+        <name>anio</name>
+        <qualifiedname>Fecha::anio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="56" column="9" bodyfile="Fecha.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fecha_1a2c8819c3eb624756d134410bb0bce9ae" prot="private" static="no" mutable="no">
+        <type>void</type>
+        <definition>void Fecha::diasFestivos</definition>
+        <argsstring></argsstring>
+        <name>diasFestivos</name>
+        <qualifiedname>Fecha::diasFestivos</qualifiedname>
+        <bitfield> std::vector&lt;std::pair&lt;int</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="58" column="10" bodyfile="Fecha.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fecha_1a2611da5c84277d920b0aa62a0780b27a" prot="private" static="no" mutable="no">
+        <type>void</type>
+        <definition>void Fecha::int</definition>
+        <argsstring></argsstring>
+        <name>int</name>
+        <qualifiedname>Fecha::int</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="58" column="23" bodyfile="Fecha.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_fecha_1a81b16ae3f7b9c031271be342d0213c06" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Fecha::diaAleatorio</definition>
+        <argsstring></argsstring>
+        <name>diaAleatorio</name>
+        <qualifiedname>Fecha::diaAleatorio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="57" column="16" bodyfile="Fecha.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fecha_1ac4157fc747f60e0f1d3c1ddb2182fd09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fecha::Fecha</definition>
+        <argsstring>(int d, int m, int a)</argsstring>
+        <name>Fecha</name>
+        <qualifiedname>Fecha::Fecha</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Project Untitled <ref refid="class_fecha" kindref="compound">Fecha</ref> implementation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="17" column="6" bodyfile="Fecha.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fecha::Fecha</definition>
+        <argsstring>()</argsstring>
+        <name>Fecha</name>
+        <qualifiedname>Fecha::Fecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="19" column="6" bodyfile="Fecha.cpp" bodystart="22" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1a4d1047477f6e006f6448d6ef3259e00c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fecha::validarFecha</definition>
+        <argsstring>()</argsstring>
+        <name>validarFecha</name>
+        <qualifiedname>Fecha::validarFecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="21" column="6" bodyfile="Fecha.cpp" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1a87227009ee7b889680f167ab5f244940" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fecha::Operation4</definition>
+        <argsstring>()</argsstring>
+        <name>Operation4</name>
+        <qualifiedname>Fecha::Operation4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="23" column="6" bodyfile="Fecha.cpp" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1abd58c618b82d76af620b0ebd016a37ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Fecha::diasEnMes</definition>
+        <argsstring>(int mes, int anio)</argsstring>
+        <name>diasEnMes</name>
+        <qualifiedname>Fecha::diasEnMes</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>mes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anio</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="36" column="5" bodyfile="Fecha.cpp" bodystart="54" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Fecha::esDiaFestivo</definition>
+        <argsstring>(int m, int d)</argsstring>
+        <name>esDiaFestivo</name>
+        <qualifiedname>Fecha::esDiaFestivo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>bool </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="42" column="6" bodyfile="Fecha.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1a280223050cd9d753ec0daa2cc5f6d935" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Fecha::agregarDiaFestivo</definition>
+        <argsstring>(int m, int d)</argsstring>
+        <name>agregarDiaFestivo</name>
+        <qualifiedname>Fecha::agregarDiaFestivo</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>d</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="48" column="6" bodyfile="Fecha.cpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1a2c544406c127317cd3968154af7f10d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Fecha::obtenerDiaAleatorio</definition>
+        <argsstring>()</argsstring>
+        <name>obtenerDiaAleatorio</name>
+        <qualifiedname>Fecha::obtenerDiaAleatorio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="50" column="5" bodyfile="Fecha.cpp" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fecha_1a40cc29f53529a61a45c67d0ee76939d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Fecha::getAleatorio</definition>
+        <argsstring>()</argsstring>
+        <name>getAleatorio</name>
+        <qualifiedname>Fecha::getAleatorio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Fecha.h" line="52" column="5" bodyfile="Fecha.cpp" bodystart="86" bodyend="88"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Project Untitled </para>
+    </detaileddescription>
+    <location file="Fecha.h" line="9" column="1" bodyfile="Fecha.h" bodystart="9" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_fecha_1a280223050cd9d753ec0daa2cc5f6d935" prot="public" virt="non-virtual"><scope>Fecha</scope><name>agregarDiaFestivo</name></member>
+      <member refid="class_fecha_1ad596dcd5c981e026d04a83a1c214e759" prot="private" virt="non-virtual"><scope>Fecha</scope><name>anio</name></member>
+      <member refid="class_fecha_1ac53f8e215a42333a1a9ff1a87e8e70f7" prot="private" virt="non-virtual"><scope>Fecha</scope><name>dia</name></member>
+      <member refid="class_fecha_1a81b16ae3f7b9c031271be342d0213c06" prot="private" virt="non-virtual"><scope>Fecha</scope><name>diaAleatorio</name></member>
+      <member refid="class_fecha_1abd58c618b82d76af620b0ebd016a37ac" prot="public" virt="non-virtual"><scope>Fecha</scope><name>diasEnMes</name></member>
+      <member refid="class_fecha_1a2c8819c3eb624756d134410bb0bce9ae" prot="private" virt="non-virtual"><scope>Fecha</scope><name>diasFestivos</name></member>
+      <member refid="class_fecha_1a4cf9774d291305be96b3e2a6fa3b3623" prot="public" virt="non-virtual"><scope>Fecha</scope><name>esAnioBisiesto</name></member>
+      <member refid="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" prot="public" virt="non-virtual"><scope>Fecha</scope><name>esDiaFestivo</name></member>
+      <member refid="class_fecha_1ac4157fc747f60e0f1d3c1ddb2182fd09" prot="public" virt="non-virtual"><scope>Fecha</scope><name>Fecha</name></member>
+      <member refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" prot="public" virt="non-virtual"><scope>Fecha</scope><name>Fecha</name></member>
+      <member refid="class_fecha_1a40cc29f53529a61a45c67d0ee76939d4" prot="public" virt="non-virtual"><scope>Fecha</scope><name>getAleatorio</name></member>
+      <member refid="class_fecha_1a2611da5c84277d920b0aa62a0780b27a" prot="private" virt="non-virtual"><scope>Fecha</scope><name>int</name></member>
+      <member refid="class_fecha_1a92bb43d32ce633e59bd11874c1a4b370" prot="private" virt="non-virtual"><scope>Fecha</scope><name>mes</name></member>
+      <member refid="class_fecha_1a2c544406c127317cd3968154af7f10d7" prot="public" virt="non-virtual"><scope>Fecha</scope><name>obtenerDiaAleatorio</name></member>
+      <member refid="class_fecha_1a87227009ee7b889680f167ab5f244940" prot="public" virt="non-virtual"><scope>Fecha</scope><name>Operation4</name></member>
+      <member refid="class_fecha_1a4d1047477f6e006f6448d6ef3259e00c" prot="public" virt="non-virtual"><scope>Fecha</scope><name>validarFecha</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

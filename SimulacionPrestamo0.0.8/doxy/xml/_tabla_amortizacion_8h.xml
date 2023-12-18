@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_tabla_amortizacion_8h" kind="file" language="C++">
+    <compoundname>TablaAmortizacion.h</compoundname>
+    <includedby refid="_tabla_amortizacion_8cpp" local="yes">TablaAmortizacion.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>TablaAmortizacion.cpp</label>
+        <link refid="_tabla_amortizacion_8cpp"/>
+      </node>
+      <node id="1">
+        <label>TablaAmortizacion.h</label>
+        <link refid="_tabla_amortizacion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_tabla_amortizacion" prot="public">TablaAmortizacion</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_TABLAAMORTIZACION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TABLAAMORTIZACION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_tabla_amortizacion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_tabla_amortizacion" kindref="compound">TablaAmortizacion</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1ad5d3b042c1fa37fb1526c8634104c2fa" kindref="member">TablaAmortizacion</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1abb782d1fa75db89d0bc77844b7ecff38" kindref="member">generarTabla</ref>(prestamo:<sp/>double,<sp/>tasaInteresAnual:<sp/>double,<sp/>numeroCuotas:<sp/>int,<sp/>fechaInicial:<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/>diaAleatorio:<sp/>int)();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1ae8647835ae556fc5f40379d2595d5630" kindref="member">mostrarTabla</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1adf4c0eecd221e66300c9bc45aa5bedcb" kindref="member">guardarTablaCSV</ref>(nombreDirectorio:<sp/>std::string)<sp/>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>obtenerNombreArchivoFechaHora():<sp/>std::string<sp/>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1add5399ac4977001816f5ec7413063b1a" kindref="member">guardarDatosEnArchivo</ref>(prestamo:<sp/>double,<sp/>tasaInteresAnual:<sp/>double,<sp/>numeroCuotas:<sp/>int,<sp/>diaAleatorio:<sp/>int)();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1a68cc105db2662b1b7121e1c934822cad" kindref="member">cargarDatosDesdeArchivo</ref>(nombreArchivo:<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;,<sp/>op:<sp/>int)();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="class_tabla_amortizacion_1a2554899145513e9ec8c1664424e4f1d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1a2554899145513e9ec8c1664424e4f1d8" kindref="member">guardarTablaCSV</ref>(nombreDirectorio:<sp/>std::string)<sp/>()();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="28" refid="class_tabla_amortizacion_1ad5d3b042c1fa37fb1526c8634104c2fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1ad5d3b042c1fa37fb1526c8634104c2fa" kindref="member">TablaAmortizacion</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1a5fd8699bf58a5daebefaf48e692052d2" kindref="member">crearRespaldo</ref>(nombreArchivo:<sp/>std::string)();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1a0cdf1a816df69a8cc133d13c62d83d15" kindref="member">listarRespaldos</ref>(nombreArchivo:<sp/>std::string)();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_tabla_amortizacion_1a522ceed5de8deaede8f7a25fe6f76c03" kindref="member">restaurarRespaldo</ref>(nombreArchivo:<sp/>std::string,<sp/>respaldoSeleccionado:<sp/>std::string)<sp/>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref>*<sp/>primero;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref>*<sp/>ultimo;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>contadorArchivos;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//_TABLAAMORTIZACION_H</highlight></codeline>
+    </programlisting>
+    <location file="TablaAmortizacion.h"/>
+  </compounddef>
+</doxygen>

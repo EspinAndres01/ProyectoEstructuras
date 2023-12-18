@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_fecha_8cpp" kind="file" language="C++">
+    <compoundname>Fecha.cpp</compoundname>
+    <includes refid="_fecha_8h" local="yes">Fecha.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>Fecha.cpp</label>
+        <link refid="_fecha_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Fecha.h</label>
+        <link refid="_fecha_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_fecha_8h" kindref="compound">Fecha.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" kindref="member">Fecha::Fecha</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" kindref="member">Fecha::Fecha</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a4d1047477f6e006f6448d6ef3259e00c" kindref="member">Fecha::validarFecha</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a87227009ee7b889680f167ab5f244940" kindref="member">Fecha::Operation4</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Fecha::esDiaHabil(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::tm&amp;<sp/>fecha):<sp/>bool()()<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a4cf9774d291305be96b3e2a6fa3b3623" kindref="member">Fecha::esAnioBisiesto</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anio)<sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1abd58c618b82d76af620b0ebd016a37ac" kindref="member">Fecha::diasEnMes</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anio)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" kindref="member">Fecha::esDiaFestivo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a280223050cd9d753ec0daa2cc5f6d935" kindref="member">Fecha::agregarDiaFestivo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a2c544406c127317cd3968154af7f10d7" kindref="member">Fecha::obtenerDiaAleatorio</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a40cc29f53529a61a45c67d0ee76939d4" kindref="member">Fecha::getAleatorio</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Fecha.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_fecha_8h" kind="file" language="C++">
+    <compoundname>Fecha.h</compoundname>
+    <includedby refid="_fecha_8cpp" local="yes">Fecha.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>Fecha.cpp</label>
+        <link refid="_fecha_8cpp"/>
+      </node>
+      <node id="1">
+        <label>Fecha.h</label>
+        <link refid="_fecha_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_fecha" prot="public">Fecha</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_FECHA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_FECHA_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_fecha" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_fecha" kindref="compound">Fecha</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" kindref="member">Fecha</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a7b55abb83291d5c960e9f8104a6eea6e" kindref="member">Fecha</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a4d1047477f6e006f6448d6ef3259e00c" kindref="member">validarFecha</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a87227009ee7b889680f167ab5f244940" kindref="member">Operation4</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>esDiaHabil(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::tm&amp;<sp/>fecha):<sp/>bool()();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="class_fecha_1a4cf9774d291305be96b3e2a6fa3b3623" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a4cf9774d291305be96b3e2a6fa3b3623" kindref="member">esAnioBisiesto</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anio);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1abd58c618b82d76af620b0ebd016a37ac" kindref="member">diasEnMes</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anio);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1aedd364b0054b1d4d3244baea6365cc71" kindref="member">esDiaFestivo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a280223050cd9d753ec0daa2cc5f6d935" kindref="member">agregarDiaFestivo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a2c544406c127317cd3968154af7f10d7" kindref="member">obtenerDiaAleatorio</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_fecha_1a40cc29f53529a61a45c67d0ee76939d4" kindref="member">getAleatorio</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dia;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mes;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>anio;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diaAleatorio;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>diasFestivos:<sp/>std::vector&lt;std::pair&lt;int,<sp/>int&gt;&gt;;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//_FECHA_H</highlight></codeline>
+    </programlisting>
+    <location file="Fecha.h"/>
+  </compounddef>
+</doxygen>

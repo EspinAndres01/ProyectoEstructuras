@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_tabla_amortizacion" kind="class" language="C++" prot="public">
+    <compoundname>TablaAmortizacion</compoundname>
+    <includes refid="_tabla_amortizacion_8h" local="no">TablaAmortizacion.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_tabla_amortizacion_1aeec3e14d13e6e6a90b869da03c03b23d" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref> *</type>
+        <definition>NodoAmortizacion* TablaAmortizacion::primero</definition>
+        <argsstring></argsstring>
+        <name>primero</name>
+        <qualifiedname>TablaAmortizacion::primero</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="36" column="22" bodyfile="TablaAmortizacion.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tabla_amortizacion_1aa1e0d8e0ccc09a11da718cb078bec4be" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref> *</type>
+        <definition>NodoAmortizacion* TablaAmortizacion::ultimo</definition>
+        <argsstring></argsstring>
+        <name>ultimo</name>
+        <qualifiedname>TablaAmortizacion::ultimo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="37" column="22" bodyfile="TablaAmortizacion.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_tabla_amortizacion_1a125ffc062eb97807679b30117d3ef834" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int TablaAmortizacion::contadorArchivos</definition>
+        <argsstring></argsstring>
+        <name>contadorArchivos</name>
+        <qualifiedname>TablaAmortizacion::contadorArchivos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="38" column="18" bodyfile="TablaAmortizacion.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_tabla_amortizacion_1ad5d3b042c1fa37fb1526c8634104c2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::TablaAmortizacion</definition>
+        <argsstring>()</argsstring>
+        <name>TablaAmortizacion</name>
+        <qualifiedname>TablaAmortizacion::TablaAmortizacion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Project Untitled <ref refid="class_tabla_amortizacion" kindref="compound">TablaAmortizacion</ref> implementation</para>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="12" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1abb782d1fa75db89d0bc77844b7ecff38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::generarTabla</definition>
+        <argsstring>(prestamo:double, tasaInteresAnual:double, numeroCuotas:int, fechaInicial:const std::string &amp;, diaAleatorio:int)()</argsstring>
+        <name>generarTabla</name>
+        <qualifiedname>TablaAmortizacion::generarTabla</qualifiedname>
+        <param>
+          <type>prestamo:double</type>
+        </param>
+        <param>
+          <type>tasaInteresAnual:double</type>
+        </param>
+        <param>
+          <type>numeroCuotas:int</type>
+        </param>
+        <param>
+          <type>fechaInicial:const std::string &amp;</type>
+        </param>
+        <param>
+          <type>diaAleatorio:int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="14" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="26" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1ae8647835ae556fc5f40379d2595d5630" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::mostrarTabla</definition>
+        <argsstring>()</argsstring>
+        <name>mostrarTabla</name>
+        <qualifiedname>TablaAmortizacion::mostrarTabla</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="16" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="58" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1adf4c0eecd221e66300c9bc45aa5bedcb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::guardarTablaCSV</definition>
+        <argsstring>(nombreDirectorio:std::string)()</argsstring>
+        <name>guardarTablaCSV</name>
+        <qualifiedname>TablaAmortizacion::guardarTablaCSV</qualifiedname>
+        <param>
+          <type>nombreDirectorio:std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="18" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1add5399ac4977001816f5ec7413063b1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void obtenerNombreArchivoFechaHora() void</type>
+        <definition>void TablaAmortizacion::guardarDatosEnArchivo</definition>
+        <argsstring>(prestamo:double, tasaInteresAnual:double, numeroCuotas:int, diaAleatorio:int)()</argsstring>
+        <name>guardarDatosEnArchivo</name>
+        <qualifiedname>TablaAmortizacion::guardarDatosEnArchivo</qualifiedname>
+        <param>
+          <type>prestamo:double</type>
+        </param>
+        <param>
+          <type>tasaInteresAnual:double</type>
+        </param>
+        <param>
+          <type>numeroCuotas:int</type>
+        </param>
+        <param>
+          <type>diaAleatorio:int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="22" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="93" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1a68cc105db2662b1b7121e1c934822cad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::cargarDatosDesdeArchivo</definition>
+        <argsstring>(nombreArchivo:const std::string &amp;, op:int)()</argsstring>
+        <name>cargarDatosDesdeArchivo</name>
+        <qualifiedname>TablaAmortizacion::cargarDatosDesdeArchivo</qualifiedname>
+        <param>
+          <type>nombreArchivo:const std::string &amp;</type>
+        </param>
+        <param>
+          <type>op:int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="24" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="110" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1a2554899145513e9ec8c1664424e4f1d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::guardarTablaCSV</definition>
+        <argsstring>(nombreDirectorio:std::string)()()</argsstring>
+        <name>guardarTablaCSV</name>
+        <qualifiedname>TablaAmortizacion::guardarTablaCSV</qualifiedname>
+        <param>
+          <type>nombreDirectorio:std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="26" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1ad5d3b042c1fa37fb1526c8634104c2fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::TablaAmortizacion</definition>
+        <argsstring>()</argsstring>
+        <name>TablaAmortizacion</name>
+        <qualifiedname>TablaAmortizacion::TablaAmortizacion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="28" column="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1a5fd8699bf58a5daebefaf48e692052d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::crearRespaldo</definition>
+        <argsstring>(nombreArchivo:std::string)()</argsstring>
+        <name>crearRespaldo</name>
+        <qualifiedname>TablaAmortizacion::crearRespaldo</qualifiedname>
+        <param>
+          <type>nombreArchivo:std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="30" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="147" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1a0cdf1a816df69a8cc133d13c62d83d15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::listarRespaldos</definition>
+        <argsstring>(nombreArchivo:std::string)()</argsstring>
+        <name>listarRespaldos</name>
+        <qualifiedname>TablaAmortizacion::listarRespaldos</qualifiedname>
+        <param>
+          <type>nombreArchivo:std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="32" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="162" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="class_tabla_amortizacion_1a522ceed5de8deaede8f7a25fe6f76c03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TablaAmortizacion::restaurarRespaldo</definition>
+        <argsstring>(nombreArchivo:std::string, respaldoSeleccionado:std::string)()</argsstring>
+        <name>restaurarRespaldo</name>
+        <qualifiedname>TablaAmortizacion::restaurarRespaldo</qualifiedname>
+        <param>
+          <type>nombreArchivo:std::string</type>
+        </param>
+        <param>
+          <type>respaldoSeleccionado:std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="TablaAmortizacion.h" line="34" column="6" bodyfile="TablaAmortizacion.cpp" bodystart="184" bodyend="210"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Project Untitled </para>
+    </detaileddescription>
+    <location file="TablaAmortizacion.h" line="9" column="1" bodyfile="TablaAmortizacion.h" bodystart="9" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_tabla_amortizacion_1a68cc105db2662b1b7121e1c934822cad" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>cargarDatosDesdeArchivo</name></member>
+      <member refid="class_tabla_amortizacion_1a125ffc062eb97807679b30117d3ef834" prot="private" virt="non-virtual"><scope>TablaAmortizacion</scope><name>contadorArchivos</name></member>
+      <member refid="class_tabla_amortizacion_1a5fd8699bf58a5daebefaf48e692052d2" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>crearRespaldo</name></member>
+      <member refid="class_tabla_amortizacion_1abb782d1fa75db89d0bc77844b7ecff38" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>generarTabla</name></member>
+      <member refid="class_tabla_amortizacion_1add5399ac4977001816f5ec7413063b1a" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>guardarDatosEnArchivo</name></member>
+      <member refid="class_tabla_amortizacion_1adf4c0eecd221e66300c9bc45aa5bedcb" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>guardarTablaCSV</name></member>
+      <member refid="class_tabla_amortizacion_1a2554899145513e9ec8c1664424e4f1d8" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>guardarTablaCSV</name></member>
+      <member refid="class_tabla_amortizacion_1a0cdf1a816df69a8cc133d13c62d83d15" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>listarRespaldos</name></member>
+      <member refid="class_tabla_amortizacion_1ae8647835ae556fc5f40379d2595d5630" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>mostrarTabla</name></member>
+      <member refid="class_tabla_amortizacion_1aeec3e14d13e6e6a90b869da03c03b23d" prot="private" virt="non-virtual"><scope>TablaAmortizacion</scope><name>primero</name></member>
+      <member refid="class_tabla_amortizacion_1a522ceed5de8deaede8f7a25fe6f76c03" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>restaurarRespaldo</name></member>
+      <member refid="class_tabla_amortizacion_1ad5d3b042c1fa37fb1526c8634104c2fa" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>TablaAmortizacion</name></member>
+      <member refid="class_tabla_amortizacion_1ad5d3b042c1fa37fb1526c8634104c2fa" prot="public" virt="non-virtual"><scope>TablaAmortizacion</scope><name>TablaAmortizacion</name></member>
+      <member refid="class_tabla_amortizacion_1aa1e0d8e0ccc09a11da718cb078bec4be" prot="private" virt="non-virtual"><scope>TablaAmortizacion</scope><name>ultimo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
