@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_nodo_amortizacion_8h" kind="file" language="C++">
+    <compoundname>NodoAmortizacion.h</compoundname>
+    <includedby refid="_nodo_amortizacion_8cpp" local="yes">NodoAmortizacion.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>NodoAmortizacion.cpp</label>
+        <link refid="_nodo_amortizacion_8cpp"/>
+      </node>
+      <node id="1">
+        <label>NodoAmortizacion.h</label>
+        <link refid="_nodo_amortizacion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_nodo_amortizacion" prot="public">NodoAmortizacion</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_NODOAMORTIZACION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_NODOAMORTIZACION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_nodo_amortizacion" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="11" refid="class_nodo_amortizacion_1a9f95ebf426c1d4c7ac461fe76d27cc37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_nodo_amortizacion_1a9f95ebf426c1d4c7ac461fe76d27cc37" kindref="member">numeroMes</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_nodo_amortizacion_1ab90ed74f5ef92ee0f17e8ed7d6d3f236" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_nodo_amortizacion_1ab90ed74f5ef92ee0f17e8ed7d6d3f236" kindref="member">cuota</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_nodo_amortizacion_1a3ef81b2902c772d967c44791ab7adcac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_nodo_amortizacion_1a3ef81b2902c772d967c44791ab7adcac" kindref="member">amortizado</ref>;</highlight></codeline>
+<codeline lineno="14" refid="class_nodo_amortizacion_1a290c084aa938959e752886bfc51a0788" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_nodo_amortizacion_1a290c084aa938959e752886bfc51a0788" kindref="member">intereses</ref>;</highlight></codeline>
+<codeline lineno="15" refid="class_nodo_amortizacion_1a15b23be9082bd94ae20999006be733ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_nodo_amortizacion_1a15b23be9082bd94ae20999006be733ff" kindref="member">capitalPendiente</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_nodo_amortizacion_1a51ebc0be818c476ec11f9e6ae25002d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_amortizacion_1a51ebc0be818c476ec11f9e6ae25002d2" kindref="member">fechaPago</ref>:<sp/>std::string;</highlight></codeline>
+<codeline lineno="17" refid="class_nodo_amortizacion_1a07d0a8b2dc4063c49148d4a33b02e98a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref>*<sp/><ref refid="class_nodo_amortizacion_1a07d0a8b2dc4063c49148d4a33b02e98a" kindref="member">siguiente</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_nodo_amortizacion_1a810ded39e86af298e8b2f839e7e202cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref>*<sp/><ref refid="class_nodo_amortizacion_1a810ded39e86af298e8b2f839e7e202cc" kindref="member">anterior</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref>(mes:<sp/>int,<sp/><ref refid="class_nodo_amortizacion_1ab90ed74f5ef92ee0f17e8ed7d6d3f236" kindref="member">cuota</ref>:<sp/>double,<sp/><ref refid="class_nodo_amortizacion_1a3ef81b2902c772d967c44791ab7adcac" kindref="member">amortizado</ref>:<sp/>double,<sp/><ref refid="class_nodo_amortizacion_1a290c084aa938959e752886bfc51a0788" kindref="member">intereses</ref>:<sp/>double,<sp/>capital:<sp/>double,<sp/>fecha:<sp/>std::string)()();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//_NODOAMORTIZACION_H</highlight></codeline>
+    </programlisting>
+    <location file="NodoAmortizacion.h"/>
+  </compounddef>
+</doxygen>

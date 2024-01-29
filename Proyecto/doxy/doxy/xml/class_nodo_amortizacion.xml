@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_nodo_amortizacion" kind="class" language="C++" prot="public">
+    <compoundname>NodoAmortizacion</compoundname>
+    <includes refid="_nodo_amortizacion_8h" local="no">NodoAmortizacion.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_nodo_amortizacion_1a9f95ebf426c1d4c7ac461fe76d27cc37" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int NodoAmortizacion::numeroMes</definition>
+        <argsstring></argsstring>
+        <name>numeroMes</name>
+        <qualifiedname>NodoAmortizacion::numeroMes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="11" column="9" bodyfile="NodoAmortizacion.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_amortizacion_1ab90ed74f5ef92ee0f17e8ed7d6d3f236" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double NodoAmortizacion::cuota</definition>
+        <argsstring></argsstring>
+        <name>cuota</name>
+        <qualifiedname>NodoAmortizacion::cuota</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="12" column="12" bodyfile="NodoAmortizacion.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_amortizacion_1a3ef81b2902c772d967c44791ab7adcac" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double NodoAmortizacion::amortizado</definition>
+        <argsstring></argsstring>
+        <name>amortizado</name>
+        <qualifiedname>NodoAmortizacion::amortizado</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="13" column="12" bodyfile="NodoAmortizacion.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_amortizacion_1a290c084aa938959e752886bfc51a0788" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double NodoAmortizacion::intereses</definition>
+        <argsstring></argsstring>
+        <name>intereses</name>
+        <qualifiedname>NodoAmortizacion::intereses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="14" column="12" bodyfile="NodoAmortizacion.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_amortizacion_1a15b23be9082bd94ae20999006be733ff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double NodoAmortizacion::capitalPendiente</definition>
+        <argsstring></argsstring>
+        <name>capitalPendiente</name>
+        <qualifiedname>NodoAmortizacion::capitalPendiente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="15" column="12" bodyfile="NodoAmortizacion.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_amortizacion_1a51ebc0be818c476ec11f9e6ae25002d2" prot="public" static="no" mutable="no">
+        <type>void</type>
+        <definition>void NodoAmortizacion::fechaPago</definition>
+        <argsstring></argsstring>
+        <name>fechaPago</name>
+        <qualifiedname>NodoAmortizacion::fechaPago</qualifiedname>
+        <bitfield> std::string</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="16" column="10" bodyfile="NodoAmortizacion.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_amortizacion_1a07d0a8b2dc4063c49148d4a33b02e98a" prot="public" static="no" mutable="no">
+        <type><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref> *</type>
+        <definition>NodoAmortizacion* NodoAmortizacion::siguiente</definition>
+        <argsstring></argsstring>
+        <name>siguiente</name>
+        <qualifiedname>NodoAmortizacion::siguiente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="17" column="22" bodyfile="NodoAmortizacion.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_amortizacion_1a810ded39e86af298e8b2f839e7e202cc" prot="public" static="no" mutable="no">
+        <type><ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref> *</type>
+        <definition>NodoAmortizacion* NodoAmortizacion::anterior</definition>
+        <argsstring></argsstring>
+        <name>anterior</name>
+        <qualifiedname>NodoAmortizacion::anterior</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="18" column="22" bodyfile="NodoAmortizacion.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_nodo_amortizacion_1ad8d1bf5434f4a8b2526242ccfa2a3955" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void NodoAmortizacion::NodoAmortizacion</definition>
+        <argsstring>(mes:int, cuota:double, amortizado:double, intereses:double, capital:double, fecha:std::string)()()</argsstring>
+        <name>NodoAmortizacion</name>
+        <qualifiedname>NodoAmortizacion::NodoAmortizacion</qualifiedname>
+        <param>
+          <type>mes:int</type>
+        </param>
+        <param>
+          <type>cuota:double</type>
+        </param>
+        <param>
+          <type>amortizado:double</type>
+        </param>
+        <param>
+          <type>intereses:double</type>
+        </param>
+        <param>
+          <type>capital:double</type>
+        </param>
+        <param>
+          <type>fecha:std::string</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Project Untitled <ref refid="class_nodo_amortizacion" kindref="compound">NodoAmortizacion</ref> implementation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="NodoAmortizacion.h" line="20" column="6" bodyfile="NodoAmortizacion.cpp" bodystart="13" bodyend="15"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Project Untitled </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>NodoAmortizacion</label>
+        <link refid="class_nodo_amortizacion"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>anterior</edgelabel>
+          <edgelabel>siguiente</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="NodoAmortizacion.h" line="9" column="1" bodyfile="NodoAmortizacion.h" bodystart="9" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_nodo_amortizacion_1a3ef81b2902c772d967c44791ab7adcac" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>amortizado</name></member>
+      <member refid="class_nodo_amortizacion_1a810ded39e86af298e8b2f839e7e202cc" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>anterior</name></member>
+      <member refid="class_nodo_amortizacion_1a15b23be9082bd94ae20999006be733ff" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>capitalPendiente</name></member>
+      <member refid="class_nodo_amortizacion_1ab90ed74f5ef92ee0f17e8ed7d6d3f236" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>cuota</name></member>
+      <member refid="class_nodo_amortizacion_1a51ebc0be818c476ec11f9e6ae25002d2" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>fechaPago</name></member>
+      <member refid="class_nodo_amortizacion_1a290c084aa938959e752886bfc51a0788" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>intereses</name></member>
+      <member refid="class_nodo_amortizacion_1ad8d1bf5434f4a8b2526242ccfa2a3955" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>NodoAmortizacion</name></member>
+      <member refid="class_nodo_amortizacion_1a9f95ebf426c1d4c7ac461fe76d27cc37" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>numeroMes</name></member>
+      <member refid="class_nodo_amortizacion_1a07d0a8b2dc4063c49148d4a33b02e98a" prot="public" virt="non-virtual"><scope>NodoAmortizacion</scope><name>siguiente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

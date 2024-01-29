@@ -1,0 +1,118 @@
+\doxysection{main.\+cpp}
+\hypertarget{main_8cpp_source}{}\label{main_8cpp_source}\mbox{\hyperlink{main_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <conio.h>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <cstdlib>}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tabla_amortizacion_8h}{TablaAmortizacion.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_fecha_8h}{Fecha.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}validaciones.h"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}validarValores.h"{}}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00009}\mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{00009}}\ \mbox{\hyperlink{class_tabla_amortizacion}{TablaAmortizacion}}\ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00010}\mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{00010}}\ \mbox{\hyperlink{class_fecha}{Fecha}}\ \mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{fecha}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00012}\mbox{\hyperlink{main_8cpp_a0592e34cffc642b3b66f6caf63d1be90}{00012}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a0592e34cffc642b3b66f6caf63d1be90}{mostrarMenu}}(\textcolor{keywordtype}{int}\ opcion)\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00013}00013\ \ \ \ \ system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00014}00014\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/GENERADOR\ DE\ PRESTAMO-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00015}00015\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nSeleccione\ una\ opcion:\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00016}00016\ \ \ \ \ std::cout\ <<\ (opcion\ ==\ 1\ ?\ \textcolor{stringliteral}{"{}>\ "{}}\ :\ \textcolor{stringliteral}{"{}\ \ "{}})\ <<\ \textcolor{stringliteral}{"{}1.\ Generar\ prestamo\ e\ ingresar\ valores.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00017}00017\ \ \ \ \ std::cout\ <<\ (opcion\ ==\ 2\ ?\ \textcolor{stringliteral}{"{}>\ "{}}\ :\ \textcolor{stringliteral}{"{}\ \ "{}})\ <<\ \textcolor{stringliteral}{"{}2.\ Recuperar\ informacion\ del\ archivo\ y\ generar\ tabla.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00018}00018\ \ \ \ \ std::cout\ <<\ (opcion\ ==\ 3\ ?\ \textcolor{stringliteral}{"{}>\ "{}}\ :\ \textcolor{stringliteral}{"{}\ \ "{}})\ <<\ \textcolor{stringliteral}{"{}4.\ Realizar\ Backup\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00019}00019\ \ \ \ \ std::cout\ <<\ (opcion\ ==\ 4\ ?\ \textcolor{stringliteral}{"{}>\ "{}}\ :\ \textcolor{stringliteral}{"{}\ \ "{}})\ <<\ \textcolor{stringliteral}{"{}5.\ Lista\ de\ respaldos\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00020}00020\ \ \ \ \ std::cout\ <<\ (opcion\ ==\ 5\ ?\ \textcolor{stringliteral}{"{}>\ "{}}\ :\ \textcolor{stringliteral}{"{}\ \ "{}})\ <<\ \textcolor{stringliteral}{"{}6.\ Salir\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00021}00021\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00022}00022\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00023}\mbox{\hyperlink{main_8cpp_ad3befffba77b3954d6bbea4d22afc517}{00023}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_ad3befffba77b3954d6bbea4d22afc517}{pausa}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00024}00024\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nPresione\ Enter\ para\ continuar...\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00025}00025\ \ \ \ \ \textcolor{keywordflow}{while}\ (\_getch()\ !=\ 13);\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00026}00026\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00029}\mbox{\hyperlink{main_8cpp_a0c396ac704a2817671b5d995387e9504}{00029}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a0c396ac704a2817671b5d995387e9504}{realizarOpcion1}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00030}00030\ \ \ \ \ system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00031}00031\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/SIMULADOR\ DE\ PRESTAMOS-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordtype}{double}\ prestamo\ =\ ingresarMontoValidado();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{keywordtype}{double}\ tasaInteresAnual\ =\ ingresarTasaInteresValidada();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00034}00034\ \ \ \ \ \textcolor{keywordtype}{int}\ numeroCuotas\ =\ ingresarNumeroCuotasValidado();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordtype}{int}\ diaAleatorio\ =\ \mbox{\hyperlink{main_8cpp_abf33251cdcdad70728da0fbd73181e9a}{fecha}}.\mbox{\hyperlink{class_fecha_a2c544406c127317cd3968154af7f10d7}{obtenerDiaAleatorio}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_add5399ac4977001816f5ec7413063b1a}{guardarDatosEnArchivo}}(prestamo,\ tasaInteresAnual,\ numeroCuotas,\ diaAleatorio);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_abb782d1fa75db89d0bc77844b7ecff38}{generarTabla}}(prestamo,\ tasaInteresAnual,\ numeroCuotas,\ \textcolor{stringliteral}{"{}-\/"{}},\ diaAleatorio);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00041}00041\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_ae8647835ae556fc5f40379d2595d5630}{mostrarTabla}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00042}00042\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nLos\ valores\ se\ han\ guardado\ exitosamente\ en\ 'datos\_prestamo.txt'."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00043}00043\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00044}00044\ \ \ \ \ \mbox{\hyperlink{main_8cpp_ad3befffba77b3954d6bbea4d22afc517}{pausa}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00045}00045\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00047}\mbox{\hyperlink{main_8cpp_ada4d35935bf31db18c5bdd72ead9dfdf}{00047}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_ada4d35935bf31db18c5bdd72ead9dfdf}{realizarOpcion2}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00048}00048\ \ \ \ \ system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.visualizarDatosEnArchivo(\textcolor{stringliteral}{"{}datos\_prestamo.txt"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordtype}{int}\ indice=ingresar\_enteros(\textcolor{stringliteral}{"{}\(\backslash\)nIngrese\ el\ elemento\ que\ quiere\ recuperar"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00051}00051\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_a68cc105db2662b1b7121e1c934822cad}{cargarDatosDesdeArchivo}}(\textcolor{stringliteral}{"{}datos\_prestamo.txt"{}},indice);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00052}00052\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_ae8647835ae556fc5f40379d2595d5630}{mostrarTabla}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00053}00053\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{main_8cpp_ad3befffba77b3954d6bbea4d22afc517}{pausa}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00055}00055\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00056}\mbox{\hyperlink{main_8cpp_a066759d123a6bd953cfd098d8d79fe6a}{00056}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a066759d123a6bd953cfd098d8d79fe6a}{realizarOpcion3}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00057}00057\ \ \ \ \ system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00058}00058\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_a5fd8699bf58a5daebefaf48e692052d2}{crearRespaldo}}(\textcolor{stringliteral}{"{}datos\_prestamo.txt"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{main_8cpp_ad3befffba77b3954d6bbea4d22afc517}{pausa}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00060}00060\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00061}\mbox{\hyperlink{main_8cpp_a5a206c3f2e68afef592d3ac406298f43}{00061}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_a5a206c3f2e68afef592d3ac406298f43}{realizarOpcion4}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00062}00062\ \ \ \ \ system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00063}00063\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_a0cdf1a816df69a8cc133d13c62d83d15}{listarRespaldos}}(\textcolor{stringliteral}{"{}datos\_prestamo.txt"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00064}00064\ \ \ \ \ std::string\ archivoRespaldo;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00065}00065\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Ingrese\ el\ nombre\ del\ archivo\ que\ desea\ restaurar:\ "{}};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00066}00066\ \ \ \ \ std::cin\ >>\ archivoRespaldo;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00067}00067\ \ \ \ \ \mbox{\hyperlink{main_8cpp_a21c7e71da037f160cc78e5fe54740ea9}{tabla}}.\mbox{\hyperlink{class_tabla_amortizacion_a522ceed5de8deaede8f7a25fe6f76c03}{restaurarRespaldo}}(\textcolor{stringliteral}{"{}datos\_prestamo.txt"{}},\ archivoRespaldo);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00068}00068\ \ \ \ \ \mbox{\hyperlink{main_8cpp_ad3befffba77b3954d6bbea4d22afc517}{pausa}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00069}00069\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00071}\mbox{\hyperlink{main_8cpp_af5707c5c5b6fe841272c33c17c19f455}{00071}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8cpp_af5707c5c5b6fe841272c33c17c19f455}{realizarOpcion5}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00072}00072\ \ \ \ \ system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00073}00073\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Saliendo\ del\ programa."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00075}00075\ \ \ \ \ \mbox{\hyperlink{main_8cpp_ad3befffba77b3954d6bbea4d22afc517}{pausa}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00076}00076\ \ \ \ \ exit(0);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00079}\mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00079}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00080}00080\ \ \ \ \ \textcolor{keywordtype}{int}\ opcion\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordtype}{char}\ key;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00082}00082\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00083}00083\ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a0592e34cffc642b3b66f6caf63d1be90}{mostrarMenu}}(opcion);}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ key\ =\ \_getch();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00086}00086\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (key)\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 72:\ \textcolor{comment}{//\ Flecha\ arriba}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (opcion\ >\ 1)\ opcion-\/-\/;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 80:\ \textcolor{comment}{//\ Flecha\ abajo}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (opcion\ <\ 5)\ opcion++;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 13:\ \textcolor{comment}{//\ Enter}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (opcion\ ==\ 1)\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a0c396ac704a2817671b5d995387e9504}{realizarOpcion1}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcion\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_ada4d35935bf31db18c5bdd72ead9dfdf}{realizarOpcion2}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (opcion\ ==\ 3)\ \{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a066759d123a6bd953cfd098d8d79fe6a}{realizarOpcion3}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(opcion==4)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_a5a206c3f2e68afef592d3ac406298f43}{realizarOpcion4}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}(opcion==5)\{}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{main_8cpp_af5707c5c5b6fe841272c33c17c19f455}{realizarOpcion5}}();}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00110}00110\ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (\textcolor{keyword}{true});}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00111}00111\ }
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00112}00112\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{main_8cpp_source_l00113}00113\ \}}
+
+\end{DoxyCode}

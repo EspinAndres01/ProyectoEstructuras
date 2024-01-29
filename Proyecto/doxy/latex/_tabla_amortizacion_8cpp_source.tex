@@ -1,0 +1,200 @@
+\doxysection{Tabla\+Amortizacion.\+cpp}
+\hypertarget{_tabla_amortizacion_8cpp_source}{}\label{_tabla_amortizacion_8cpp_source}\mbox{\hyperlink{_tabla_amortizacion_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_tabla_amortizacion_8h}{TablaAmortizacion.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00013}\mbox{\hyperlink{class_tabla_amortizacion_ad5d3b042c1fa37fb1526c8634104c2fa}{00013}}\ \mbox{\hyperlink{class_tabla_amortizacion_ad5d3b042c1fa37fb1526c8634104c2fa}{TablaAmortizacion::TablaAmortizacion}}()\ :\ primero(nullptr),\ ultimo(nullptr)\ \{\}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00015}00015\ TablaAmortizacion::\string~TablaAmortizacion()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{class_nodo_amortizacion}{NodoAmortizacion}}*\ actual\ =\ primero;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00017}00017\ \ \ \ \ \textcolor{keywordflow}{while}\ (actual\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00018}00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_nodo_amortizacion}{NodoAmortizacion}}*\ temp\ =\ actual;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00019}00019\ \ \ \ \ \ \ \ \ actual\ =\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_a07d0a8b2dc4063c49148d4a33b02e98a}{siguiente}};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00020}00020\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ temp;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00021}00021\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00022}00022\ \ \ \ \ primero\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00023}00023\ \ \ \ \ ultimo\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00024}00024\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00026}\mbox{\hyperlink{class_tabla_amortizacion_abb782d1fa75db89d0bc77844b7ecff38}{00026}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_abb782d1fa75db89d0bc77844b7ecff38}{TablaAmortizacion::generarTabla}}(prestamo:\ double,\ tasaInteresAnual:\ double,\ numeroCuotas:\ int,\ fechaInicial:\ const\ std::string\&,\ diaAleatorio:\ int)()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{double}\ tasaInteresMensual\ =\ tasaInteresAnual\ /\ 12.0\ /\ 100.0;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{double}\ cuota\ =\ prestamo\ *\ tasaInteresMensual\ /\ (1\ -\/\ pow(1\ +\ tasaInteresMensual,\ -\/numeroCuotas));}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00030}00030\ \ \ \ \ \textcolor{keywordtype}{double}\ capitalPendiente\ =\ prestamo;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00031}00031\ \ \ \ \ std::string\ fechaPago\ =\ fechaInicial;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00033}00033\ \ \ \ \ \textcolor{comment}{//\ Crear\ el\ primer\ nodo\ con\ valores\ predefinidos}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00034}00034\ \ \ \ \ primero\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_nodo_amortizacion}{NodoAmortizacion}}(0,\ 0,\ 0.0,\ 0.0,\ prestamo,\ fechaInicial);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00035}00035\ \ \ \ \ ultimo\ =\ primero;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <=\ numeroCuotas;\ ++i)\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00038}00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ interes\ =\ capitalPendiente\ *\ tasaInteresMensual;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00039}00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ amortizado\ =\ cuota\ -\/\ interes;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00040}00040\ \ \ \ \ \ \ \ \ capitalPendiente\ -\/=\ amortizado;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00042}00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Validar\ que\ el\ capital\ pendiente\ no\ sea\ negativo}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ capitalPendiente\ =\ (capitalPendiente\ <\ 0)\ ?\ 0\ :\ capitalPendiente;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00044}00044\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Generar\ la\ fecha\ de\ pago}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ std::string\ fechaPago\ =\ Fecha::generarFechaPago(fechaInicial,\ i);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Crear\ un\ nuevo\ nodo\ de\ amortización}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_nodo_amortizacion}{NodoAmortizacion}}*\ nuevoPago\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{class_nodo_amortizacion}{NodoAmortizacion}}(i,\ cuota,\ amortizado,\ interes,\ capitalPendiente,\ fechaPago);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00050}00050\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Establecer\ relaciones\ entre\ nodos}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ ultimo-\/>\mbox{\hyperlink{class_nodo_amortizacion_a07d0a8b2dc4063c49148d4a33b02e98a}{siguiente}}\ =\ nuevoPago;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ nuevoPago-\/>\mbox{\hyperlink{class_nodo_amortizacion_a810ded39e86af298e8b2f839e7e202cc}{anterior}}\ =\ ultimo;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ ultimo\ =\ nuevoPago;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00055}00055\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00056}00056\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00058}\mbox{\hyperlink{class_tabla_amortizacion_ae8647835ae556fc5f40379d2595d5630}{00058}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_ae8647835ae556fc5f40379d2595d5630}{TablaAmortizacion::mostrarTabla}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00059}00059\ \ \ \ \ \mbox{\hyperlink{class_nodo_amortizacion}{NodoAmortizacion}}*\ actual\ =\ primero;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00060}00060\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00061}00061\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nMes\ |\ Cuota\ |\ Amortizado\ |\ Intereses\ |\ Capital\ Pendiente\ |\ Fecha\ de\ Pago"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00062}00062\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{keywordflow}{while}\ (actual\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Configuraccioo\ el\ formato\ de\ salida\ para\ evitar\ la\ notación científica}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::fixed\ <<\ std::setprecision(2);\ \textcolor{comment}{//\ Dos\ decimales\ después del\ punto\ decimal}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00067}00067\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ std::cout\ <<\ std::setw(3)\ <<\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_a9f95ebf426c1d4c7ac461fe76d27cc37}{numeroMes}}\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}\ <<\ std::setw(8)\ <<\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_ab90ed74f5ef92ee0f17e8ed7d6d3f236}{cuota}}\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(10)\ <<\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_a3ef81b2902c772d967c44791ab7adcac}{amortizado}}\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}\ <<\ std::setw(9)\ <<\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_a290c084aa938959e752886bfc51a0788}{intereses}}\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ <<\ std::setw(17)\ <<\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_a15b23be9082bd94ae20999006be733ff}{capitalPendiente}}\ <<\ \textcolor{stringliteral}{"{}\ |\ "{}}\ <<\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_a51ebc0be818c476ec11f9e6ae25002d2}{fechaPago}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ actual\ =\ actual-\/>\mbox{\hyperlink{class_nodo_amortizacion_a07d0a8b2dc4063c49148d4a33b02e98a}{siguiente}};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00073}00073\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00074}00074\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00075}00075\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00076}00076\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00077}00077\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00081}\mbox{\hyperlink{class_tabla_amortizacion_adf4c0eecd221e66300c9bc45aa5bedcb}{00081}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_adf4c0eecd221e66300c9bc45aa5bedcb}{TablaAmortizacion::guardarTablaCSV}}(nombreDirectorio:\ std::string)\ ()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00082}00082\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00083}00083\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00084}00084\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00085}00085\ \textcolor{keywordtype}{void}\ TablaAmortizacion::obtenerNombreArchivoFechaHora():\ std::string\ ()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00086}00086\ \ \ \ \ \textcolor{keyword}{auto}\ now\ =\ std::chrono::system\_clock::now();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00087}00087\ \ \ \ \ \textcolor{keyword}{auto}\ now\_c\ =\ std::chrono::system\_clock::to\_time\_t(now);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00088}00088\ \ \ \ \ std::stringstream\ ss;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00089}00089\ \ \ \ \ ss\ <<\ std::put\_time(std::localtime(\&now\_c),\ \textcolor{stringliteral}{"{}\%Y-\/\%m-\/\%d-\/\%H-\/\%M-\/\%S"{}});}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00090}00090\ \ \ \ \ \textcolor{keywordflow}{return}\ ss.str();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00091}00091\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00093}\mbox{\hyperlink{class_tabla_amortizacion_add5399ac4977001816f5ec7413063b1a}{00093}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_add5399ac4977001816f5ec7413063b1a}{TablaAmortizacion::guardarDatosEnArchivo}}(prestamo:\ double,\ tasaInteresAnual:\ double,\ numeroCuotas:\ int,\ diaAleatorio:\ int)()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00094}00094\ \ \ \ \ std::ofstream\ archivo(\textcolor{stringliteral}{"{}datos\_prestamo.txt"{}},\ std::ios::app);\ \textcolor{comment}{//\ Abre\ el\ archivo\ en\ modo\ de\ añadir\ (append)\ como\ en\ python}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{keywordflow}{if}\ (!archivo)\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Si\ el\ archivo\ no\ existe,\ se\ crea\ uno\ nuevo}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ archivo.open(\textcolor{stringliteral}{"{}datos\_prestamo.txt"{}});}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00099}00099\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00100}00100\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keywordflow}{if}\ (archivo.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ archivo\ <<\ prestamo\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ tasaInteresAnual\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ numeroCuotas\ <<\ \textcolor{stringliteral}{"{}\ "{}}\ <<\ diaAleatorio\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ archivo.close();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00105}00105\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00106}00106\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}No\ se\ pudo\ abrir\ el\ archivo\ 'datos\_prestamo.txt'\ para\ escritura."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00107}00107\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00108}00108\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00110}\mbox{\hyperlink{class_tabla_amortizacion_a68cc105db2662b1b7121e1c934822cad}{00110}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_a68cc105db2662b1b7121e1c934822cad}{TablaAmortizacion::cargarDatosDesdeArchivo}}(nombreArchivo:\ const\ std::string\&,\ op:\ int)()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00111}00111\ \ \ \ \ std::ifstream\ archivo(nombreArchivo);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00113}00113\ \ \ \ \ \textcolor{keywordflow}{if}\ (archivo.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00114}00114\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ prestamo,\ tasaInteresAnual;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00115}00115\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ numeroCuotas,\ diaAleatorio;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00116}00116\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00117}00117\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ contador\ =\ 1;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00118}00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (archivo\ >>\ prestamo\ >>\ tasaInteresAnual\ >>\ numeroCuotas\ >>\ diaAleatorio)\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (contador\ ==\ opcion)\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ fechaInicial\ =\ \textcolor{stringliteral}{"{}-\/"{}};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_tabla_amortizacion_abb782d1fa75db89d0bc77844b7ecff38}{generarTabla}}(prestamo,\ tasaInteresAnual,\ numeroCuotas,\ fechaInicial,\ diaAleatorio);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ archivo.close();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00125}00125\ \ \ \ \ \ \ \ \ \ \ \ \ contador++;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00126}00126\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00127}00127\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00128}00128\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Opción no\ válida."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00129}00129\ \ \ \ \ \ \ \ \ archivo.close();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00131}00131\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00132}00132\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}El\ archivo\ "{}}\ <<\ nombreArchivo\ <<\ \textcolor{stringliteral}{"{}\ no\ existe\ o\ no\ se\ pudo\ abrir."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00133}00133\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00134}00134\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00135}00135\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00136}00136\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_adf4c0eecd221e66300c9bc45aa5bedcb}{TablaAmortizacion::guardarTablaCSV}}(nombreDirectorio:\ std::string)\ ()()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00138}00138\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00139}00139\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00143}00143\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_ad5d3b042c1fa37fb1526c8634104c2fa}{TablaAmortizacion::TablaAmortizacion}}()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00144}00144\ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00145}00145\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00147}\mbox{\hyperlink{class_tabla_amortizacion_a5fd8699bf58a5daebefaf48e692052d2}{00147}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_a5fd8699bf58a5daebefaf48e692052d2}{TablaAmortizacion::crearRespaldo}}(nombreArchivo:\ std::string)()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00148}00148\ \ \ \ \ std::string\ carpetaRespaldos\ =\ \textcolor{stringliteral}{"{}Respaldo"{}};\ \textcolor{comment}{//\ Modifica\ esto\ con\ la\ ruta\ de\ la\ carpeta\ donde\ quieres\ guardar\ los\ respaldos}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00149}00149\ \ \ \ \ std::string\ nombreRespaldo\ =\ obtenerNombreArchivoFechaHora()\ +\ \textcolor{stringliteral}{"{}-\/"{}}\ +\ nombreArchivo;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00150}00150\ \ \ \ \ std::string\ comando\ =\ \textcolor{stringliteral}{"{}mkdir\ \(\backslash\)"{}"{}}\ +\ carpetaRespaldos\ +\ \textcolor{stringliteral}{"{}\(\backslash\)"{}\ 2>\ nul\ \&\ copy\ \(\backslash\)"{}"{}}\ +\ nombreArchivo\ +\ \textcolor{stringliteral}{"{}\(\backslash\)"{}\ \(\backslash\)"{}"{}}\ +\ carpetaRespaldos\ +\ \textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}}\ +\ nombreRespaldo\ +\ \textcolor{stringliteral}{"{}\(\backslash\)"{}"{}};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00151}00151\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00152}00152\ \ \ \ \ \textcolor{keywordtype}{int}\ resultado\ =\ std::system(comando.c\_str());}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00153}00153\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00154}00154\ \ \ \ \ \textcolor{keywordflow}{if}\ (resultado\ !=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00155}00155\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}No\ se\ pudo\ crear\ el\ archivo\ de\ respaldo."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00156}00156\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00157}00157\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Se\ ha\ creado\ un\ respaldo\ en\ la\ carpeta:\ "{}}\ <<\ carpetaRespaldos\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00158}00158\ \ \ \ \ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Nombre\ del\ respaldo:\ "{}}\ <<\ nombreRespaldo\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00159}00159\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00160}00160\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00161}00161\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00162}\mbox{\hyperlink{class_tabla_amortizacion_a0cdf1a816df69a8cc133d13c62d83d15}{00162}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_a0cdf1a816df69a8cc133d13c62d83d15}{TablaAmortizacion::listarRespaldos}}(nombreArchivo:\ std::string)()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00163}00163\ \ \ \ \ std::string\ carpetaRespaldos\ =\ \textcolor{stringliteral}{"{}Respaldo"{}};\ \textcolor{comment}{//\ Cambia\ con\ la\ ruta\ de\ tu\ carpeta\ de\ respaldo}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00164}00164\ \ \ \ \ std::regex\ formato(\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)d\{4\}-\/\(\backslash\)\(\backslash\)d\{2\}-\/\(\backslash\)\(\backslash\)d\{2\}-\/\(\backslash\)\(\backslash\)d\{2\}-\/\(\backslash\)\(\backslash\)d\{2\}-\/\(\backslash\)\(\backslash\)d\{2\}-\/"{}}\ +\ nombreArchivo);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00165}00165\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00166}00166\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}Respaldos\ disponibles\ para\ '"{}}\ <<\ nombreArchivo\ <<\ \textcolor{stringliteral}{"{}':"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00167}00167\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00168}00168\ \ \ \ \ DIR*\ dir;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00169}00169\ \ \ \ \ \textcolor{keyword}{struct\ }dirent*\ ent;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00170}00170\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00171}00171\ \ \ \ \ \textcolor{keywordflow}{if}\ ((dir\ =\ opendir(carpetaRespaldos.c\_str()))\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00172}00172\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ ((ent\ =\ readdir(dir))\ !=\ \textcolor{keyword}{nullptr})\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00173}00173\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ filename\ =\ ent-\/>d\_name;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00174}00174\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::regex\_search(filename,\ formato))\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00175}00175\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::cout\ <<\ filename\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00176}00176\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00177}00177\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00178}00178\ \ \ \ \ \ \ \ \ closedir(dir);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00179}00179\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00180}00180\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}No\ se\ pudo\ abrir\ la\ carpeta\ '"{}}\ <<\ carpetaRespaldos\ <<\ \textcolor{stringliteral}{"{}'"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00181}00181\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00182}00182\ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00183}00183\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00184}\mbox{\hyperlink{class_tabla_amortizacion_a522ceed5de8deaede8f7a25fe6f76c03}{00184}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_tabla_amortizacion_a522ceed5de8deaede8f7a25fe6f76c03}{TablaAmortizacion::restaurarRespaldo}}(nombreArchivo:\ std::string,\ respaldoSeleccionado:\ std::string)\ ()\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00185}00185\ \ \ \ \ std::string\ carpetaRespaldos\ =\ \textcolor{stringliteral}{"{}Respaldo/"{}};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00186}00186\ \ \ \ \ std::string\ rutaArchivoOriginal\ =\ nombreArchivo;\ \textcolor{comment}{//\ Ruta\ del\ archivo\ original}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00187}00187\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00188}00188\ \ \ \ \ std::string\ rutaRespaldo\ =\ carpetaRespaldos\ +\ archivoRespaldo\ +\ \textcolor{stringliteral}{"{}.txt"{}};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00189}00189\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00190}00190\ \ \ \ \ std::ifstream\ respaldo(rutaRespaldo);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00191}00191\ \ \ \ \ std::ofstream\ archivoOriginal(rutaArchivoOriginal);}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00192}00192\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00193}00193\ \ \ \ \ \textcolor{keywordflow}{if}\ (!respaldo.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00194}00194\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ se\ pudo\ abrir\ el\ archivo\ de\ respaldo\ '"{}}\ <<\ rutaRespaldo\ <<\ \textcolor{stringliteral}{"{}'"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00195}00195\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00196}00196\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00197}00197\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00198}00198\ \ \ \ \ \textcolor{keywordflow}{if}\ (!archivoOriginal.is\_open())\ \{}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00199}00199\ \ \ \ \ \ \ \ \ std::cerr\ <<\ \textcolor{stringliteral}{"{}Error:\ No\ se\ pudo\ abrir\ el\ archivo\ original\ '"{}}\ <<\ rutaArchivoOriginal\ <<\ \textcolor{stringliteral}{"{}'"{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00200}00200\ \ \ \ \ \ \ \ \ respaldo.close();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00201}00201\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00202}00202\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00204}00204\ \ \ \ \ archivoOriginal\ <<\ respaldo.rdbuf();\ \textcolor{comment}{//\ Copiar\ contenido\ del\ respaldo\ al\ archivo\ original}}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00205}00205\ \ \ \ \ respaldo.close();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00206}00206\ \ \ \ \ archivoOriginal.close();}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00207}00207\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00208}00208\ \ \ \ \ std::cout\ <<\ \textcolor{stringliteral}{"{}El\ respaldo\ '"{}}\ <<\ archivoRespaldo\ <<\ \textcolor{stringliteral}{"{}'\ ha\ sido\ restaurado\ correctamente\ en\ '"{}}\ <<\ nombreArchivo\ <<\ \textcolor{stringliteral}{"{}'."{}}\ <<\ std::endl;}
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00209}00209\ }
+\DoxyCodeLine{\Hypertarget{_tabla_amortizacion_8cpp_source_l00210}00210\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="class_nodo" kind="class" language="C++" prot="public">
+    <compoundname>Nodo</compoundname>
+    <includes refid="_nodo_8h" local="no">Nodo.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_nodo_1a631ad0a5b84519a97fc92bc3d6d19f2a" prot="private" static="no" mutable="no">
+        <type>void</type>
+        <definition>void Nodo::dato</definition>
+        <argsstring></argsstring>
+        <name>dato</name>
+        <qualifiedname>Nodo::dato</qualifiedname>
+        <bitfield> T</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="38" column="10" bodyfile="Nodo.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_1a53c34044c2c14a086699a34056f547f1" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+        <definition>Nodo&lt;T&gt;* Nodo::siguiente</definition>
+        <argsstring></argsstring>
+        <name>siguiente</name>
+        <qualifiedname>Nodo::siguiente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="39" column="10" bodyfile="Nodo.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_nodo_1a55e9018ef00f7b3a60f9001226ab759a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+        <definition>Nodo&lt;T&gt;* Nodo::anterior</definition>
+        <argsstring></argsstring>
+        <name>anterior</name>
+        <qualifiedname>Nodo::anterior</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="40" column="10" bodyfile="Nodo.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_nodo_1aa2195ac9ea731caef54c7dc14d7c9638" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>Nodo::Nodo</definition>
+        <argsstring>(T valor)</argsstring>
+        <name>Nodo</name>
+        <qualifiedname>Nodo::Nodo</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Project Untitled <ref refid="class_nodo" kindref="compound">Nodo</ref> implementation <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="15" column="6" bodyfile="Nodo.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_1acf46078c62f4f551694f02897600a611" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nodo::setDato</definition>
+        <argsstring>(T valor)</argsstring>
+        <name>setDato</name>
+        <qualifiedname>Nodo::setDato</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="20" column="6" bodyfile="Nodo.cpp" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_1ae3ab15a287f33983923c8f0594e7a1a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nodo::setSiguiente</definition>
+        <argsstring>(Nodo&lt; T &gt; *siguienteNodo)</argsstring>
+        <name>setSiguiente</name>
+        <qualifiedname>Nodo::setSiguiente</qualifiedname>
+        <param>
+          <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+          <declname>siguienteNodo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>siguienteNodo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="25" column="6" bodyfile="Nodo.cpp" bodystart="34" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_1a73f85bd0a63f8fc4c73af4abe61a1577" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Nodo::setAnterior</definition>
+        <argsstring>(Nodo&lt; T &gt; *anteriorNodo)</argsstring>
+        <name>setAnterior</name>
+        <qualifiedname>Nodo::setAnterior</qualifiedname>
+        <param>
+          <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+          <declname>anteriorNodo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>anteriorNodo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="30" column="6" bodyfile="Nodo.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_1acdef37bb656169b5bfe9808f176c8308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Nodo::getDato</definition>
+        <argsstring>()</argsstring>
+        <name>getDato</name>
+        <qualifiedname>Nodo::getDato</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>T </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="32" column="3" bodyfile="Nodo.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_1a9be453ba1773864e0f49eaac024e0e0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+        <definition>Nodo&lt; T &gt; * Nodo::getSiguiente</definition>
+        <argsstring>()</argsstring>
+        <name>getSiguiente</name>
+        <qualifiedname>Nodo::getSiguiente</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nodo&lt;T&gt;* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="34" column="6" bodyfile="Nodo.cpp" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_nodo_1afff41840aa78a6cbb1db3c79f8406e0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_nodo" kindref="compound">Nodo</ref>&lt; T &gt; *</type>
+        <definition>Nodo&lt; T &gt; * Nodo::getAnterior</definition>
+        <argsstring>()</argsstring>
+        <name>getAnterior</name>
+        <qualifiedname>Nodo::getAnterior</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Nodo&lt;T&gt;* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Nodo.h" line="36" column="6" bodyfile="Nodo.cpp" bodystart="67" bodyend="69"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Project Untitled </para>
+    </detaileddescription>
+    <location file="Nodo.h" line="9" column="1" bodyfile="Nodo.h" bodystart="9" bodyend="41"/>
+    <listofallmembers>
+      <member refid="class_nodo_1a55e9018ef00f7b3a60f9001226ab759a" prot="private" virt="non-virtual"><scope>Nodo</scope><name>anterior</name></member>
+      <member refid="class_nodo_1a631ad0a5b84519a97fc92bc3d6d19f2a" prot="private" virt="non-virtual"><scope>Nodo</scope><name>dato</name></member>
+      <member refid="class_nodo_1afff41840aa78a6cbb1db3c79f8406e0a" prot="public" virt="non-virtual"><scope>Nodo</scope><name>getAnterior</name></member>
+      <member refid="class_nodo_1acdef37bb656169b5bfe9808f176c8308" prot="public" virt="non-virtual"><scope>Nodo</scope><name>getDato</name></member>
+      <member refid="class_nodo_1a9be453ba1773864e0f49eaac024e0e0a" prot="public" virt="non-virtual"><scope>Nodo</scope><name>getSiguiente</name></member>
+      <member refid="class_nodo_1aa2195ac9ea731caef54c7dc14d7c9638" prot="public" virt="non-virtual"><scope>Nodo</scope><name>Nodo</name></member>
+      <member refid="class_nodo_1a73f85bd0a63f8fc4c73af4abe61a1577" prot="public" virt="non-virtual"><scope>Nodo</scope><name>setAnterior</name></member>
+      <member refid="class_nodo_1acf46078c62f4f551694f02897600a611" prot="public" virt="non-virtual"><scope>Nodo</scope><name>setDato</name></member>
+      <member refid="class_nodo_1ae3ab15a287f33983923c8f0594e7a1a7" prot="public" virt="non-virtual"><scope>Nodo</scope><name>setSiguiente</name></member>
+      <member refid="class_nodo_1a53c34044c2c14a086699a34056f547f1" prot="private" virt="non-virtual"><scope>Nodo</scope><name>siguiente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

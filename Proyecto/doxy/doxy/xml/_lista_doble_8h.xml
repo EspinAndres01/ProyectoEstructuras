@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="_lista_doble_8h" kind="file" language="C++">
+    <compoundname>ListaDoble.h</compoundname>
+    <includedby refid="_lista_doble_8cpp" local="yes">ListaDoble.cpp</includedby>
+    <invincdepgraph>
+      <node id="2">
+        <label>ListaDoble.cpp</label>
+        <link refid="_lista_doble_8cpp"/>
+      </node>
+      <node id="1">
+        <label>ListaDoble.h</label>
+        <link refid="_lista_doble_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_lista_doble" prot="public">ListaDoble</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_LISTADOBLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_LISTADOBLE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_lista_doble" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_lista_doble" kindref="compound">ListaDoble</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="14" refid="class_lista_doble_1a9531b765943e67de60d6aa594e89b821" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a9531b765943e67de60d6aa594e89b821" kindref="member">Attribute1</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_lista_doble_1a3cd1115c50139c5e689ca54415e0bc6e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a3cd1115c50139c5e689ca54415e0bc6e" kindref="member">Attribute2</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1ac9a17849733bd09928c988258a56842a" kindref="member">ListaDoble</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a3a42bf42fecbffd1079e501fdebd5f79" kindref="member">Insertar</ref>(T<sp/>valor);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a56a5839e01762eef2ee2d6bd6515f70e" kindref="member">Buscar</ref>(T<sp/>valor);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a4e9edda3ae747c59c99a026502ecd82b" kindref="member">Eliminar</ref>(T<sp/>valor);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_lista_doble_1a386e862be6c6681830c8791ebcaeb264" kindref="member">Mostrar</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>primero:<sp/><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*<sp/>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ultimo:<sp/><ref refid="class_nodo" kindref="compound">Nodo&lt;T&gt;</ref>*;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//_LISTADOBLE_H</highlight></codeline>
+    </programlisting>
+    <location file="ListaDoble.h"/>
+  </compounddef>
+</doxygen>
